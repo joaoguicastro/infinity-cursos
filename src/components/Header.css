@@ -1,0 +1,68 @@
+/* src/components/Header.css */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: gray; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .menu-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 35px;
+  }
+  
+  .nav {
+    position: fixed;
+    top: 100px; /* Ajuste para ficar abaixo do header */
+    right: -100%;
+    height: calc(100vh - 60px); /* Ajuste a altura para não incluir o header */
+    width: 250px;
+    background-color: #000;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .nav.open {
+    right: 0;
+  }
+  
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .nav ul li {
+    margin: 20px 0;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  .nav ul li a:hover {
+    color: #00FF00; /* Cor de destaque */
+  }
+  
