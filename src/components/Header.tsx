@@ -1,6 +1,6 @@
 // src/components/Header.tsx
 import React, { useState } from 'react';
-import logo from '../assets/Ícone-do-logotipo-normal.png'; // Altere para o caminho correto da sua logo
+import logo from '../assets/Ícone-do-logotipo-normal.png'; // Altere para o caminho correto da sua logo
 import './Header.css';
 
 const Header: React.FC = () => {

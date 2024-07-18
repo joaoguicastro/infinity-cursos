@@ -8,10 +8,9 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <main className="content">
-        {/* Conteúdo adicional da landing page */}
-      </main>
+      <div className="content">
+        <Hero />
+      </div>
     </div>
   );
 };
