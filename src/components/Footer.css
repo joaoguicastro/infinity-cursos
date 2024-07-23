@@ -51,4 +51,7 @@
     margin: 0;
     font-size: 0.9rem;
   }
-  
+  .link{
+    list-style: none;
+    text-decoration: none;
+  }

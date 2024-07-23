@@ -13,18 +13,18 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-section">
           <h3>Contato</h3>
-          <p>(82) 9 9944-6949</p>
-          <p>Empresarial Terra Brasilis, sala 701</p>
-          <p>Av. da Paz, 1864 – Centro, Maceió – AL, 57020-470</p>
-          <p>contato@agenciamako.com</p>
+          <p>(82) 9 9120-7549</p>
+          <p>Shopping Pitaguary, Subsolo S2 e S3</p>
+          <p>Rua Joao de Alencar, 113 – Centro, Maracanau – CE, 61901-085</p>
+          <p>redeinfinitycursos@gmail.com</p>
           <div className="social-icons">
-            <FaInstagram />
-            <FaWhatsapp />
+            <a href="https://www.instagram.com/infinitycursosofc/" className='link'> <FaInstagram /> </a>
+            <a href="https://wa.me/5591207549" className='link'><FaWhatsapp /></a>
             <FaEnvelope />
           </div>
         </div>
         <div className="footer-section">
-          <h3>Agência</h3>
+          <h3>Escola</h3>
           <p>Início</p>
           <p>Quem somos</p>
           <p>Serviços</p>
