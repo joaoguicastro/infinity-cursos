@@ -1,0 +1,54 @@
+/* src/components/LearningPath.css */
+.learning-path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Preencher toda a altura da tela */
+    width: 100vw; /* Preencher toda a largura da tela */
+    padding: 50px;
+    background-color: #f2f2f2;
+  }
+  
+  .learning-path img {
+    width: 50%;
+    max-width: 600px;
+    margin-right: 50px;
+  }
+  
+  .learning-steps {
+    max-width: 600px;
+  }
+  
+  .learning-steps h2 {
+    font-size: 2.5rem; /* Aumentar o tamanho da fonte */
+    margin-bottom: 20px;
+  }
+  
+  .learning-steps ol {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step;
+  }
+  
+  .learning-steps li {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .learning-steps li::before {
+    content: counter(step);
+    counter-increment: step;
+    background-color: #73b809;
+    color: white;
+    border-radius: 50%;
+    width: 40px; /* Aumentar o tamanho do círculo */
+    height: 40px; /* Aumentar o tamanho do círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 1.5rem; /* Aumentar o tamanho do número */
+  }
+  

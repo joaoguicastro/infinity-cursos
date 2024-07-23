@@ -1,6 +1,6 @@
 // src/components/Header.tsx
 import React, { useState } from 'react';
-import logo from '../assets/Ícone-do-logotipo-normal.png'; // Altere para o caminho correto da sua logo
+import logo from '../assets/Ícone-do-logotipo-normal.png';
 import './Header.css';
 
 const Header: React.FC = () => {
@@ -15,17 +15,19 @@ const Header: React.FC = () => {
       <div className="logo">
         <img src={logo} alt="Infinity Cursos" />
       </div>
-      <button className="menu-button" onClick={toggleMenu}>
-        {menuOpen ? 'Close' : 'Menu'}
-      </button>
-      <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-        <ul>
-          <li><a href="#courses">Cursos</a></li>
-          <li><a href="#about">Sobre nós</a></li>
-          <li><a href="#contact">Contato</a></li>
-          <li><a href="#student-area">Área do aluno</a></li>
-          <li><a href="#join-us">Seja nosso aluno</a></li>
-        </ul>
+      <nav className="nav">
+        {menuOpen && (
+          <ul>
+            <li><a href="#courses">Cursos</a></li>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="#student-area">Área do aluno</a></li>
+            <li><a href="#join-us">Seja nosso aluno</a></li>
+          </ul>
+        )}
+        <button className="menu-button btn" onClick={toggleMenu}>
+          {menuOpen ? 'Close' : 'Menu'}
+        </button>
       </nav>
     </header>
   );

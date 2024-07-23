@@ -1,16 +1,26 @@
 // src/App.tsx
 import React from 'react';
-import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import LearningPath from './components/LearningPath';
+import Differentials from './components/Differentials';
+import CoursesCarousel from './components/CoursesCarousel';
+import JoinSection from './components/JoinSection';
+import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
+import './App.css';
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
-      <div className="content">
-        <Hero />
-      </div>
+      <Hero />
+      <LearningPath />
+      <Differentials />
+      <CoursesCarousel />
+      <JoinSection />
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
