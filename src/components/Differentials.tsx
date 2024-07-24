@@ -1,20 +1,15 @@
-// src/components/Differentials.tsx
 import React from 'react';
 import './Differentials.css';
 import { FaRocket, FaLaptopCode, FaClipboardList, FaBullhorn } from 'react-icons/fa';
+import SubscribeButton from './SubscribeButton';
 
 const Differentials: React.FC = () => {
   return (
-    <section className="differentials">
+    <section className="differentials" id='diferencial'>
       <div className="differentials-content">
         <h2>Diferenciais da Empresa</h2>
         <p>É assim que vamos te ajudar!</p>
-        <button className="learn-more">
-          <span className="circle" aria-hidden="true">
-            <span className="icon arrow"></span>
-          </span>
-          <span className="button-text">Learn More</span>
-        </button>
+        <SubscribeButton />
       </div>
       <div className="differentials-examples">
         <div className="card">

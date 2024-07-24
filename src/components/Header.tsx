@@ -10,6 +10,11 @@ const Header: React.FC = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const scrollToSection = (event: React.MouseEvent, sectionId: string) => {
+    event.preventDefault();
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <header className="header">
       <div className="logo">
@@ -18,11 +23,11 @@ const Header: React.FC = () => {
       <nav className="nav">
         {menuOpen && (
           <ul>
-            <li><a href="#courses">Cursos</a></li>
-            <li><a href="#about">Sobre nós</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#courses" onClick={(e) => scrollToSection(e, 'cursos')}>Cursos</a></li>
+            <li><a href="#differentials" onClick={(e) => scrollToSection(e, 'differentials')}>Sobre Nós</a></li>
+            <li><a href="https://wa.me/5591207549">Contato</a></li>
             <li><a href="#student-area">Área do aluno</a></li>
-            <li><a href="#join-us">Seja nosso aluno</a></li>
+            <li><a href="#join-us" onClick={(e) => scrollToSection(e, 'formulario')}>Seja nosso aluno</a></li>
           </ul>
         )}
         <button className="menu-button btn" onClick={toggleMenu}>

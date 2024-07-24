@@ -1,7 +1,7 @@
-// src/components/CoursesCarousel.tsx
 import React, { useState, useRef } from 'react';
 import './CoursesCarousel.css';
 import logo from '../assets/Logotipo-vertical-normal.png';
+import SubscribeButton from './SubscribeButton';
 
 const courses = [
   { id: 1, name: "Curso 1", category: "Negócios", image: logo },
@@ -62,12 +62,7 @@ const CoursesCarousel = () => {
         <button className="carousel-btn" onClick={handlePrevClick}>←</button>
         <button className="carousel-btn" onClick={handleNextClick}>→</button>
       </div>
-      <button className="learn-more">
-        <span className="circle" aria-hidden="true">
-          <span className="icon arrow"></span>
-        </span>
-        <span className="button-text">Inscreva-se agora</span>
-      </button>
+      <SubscribeButton />
     </div>
   );
 }
