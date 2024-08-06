@@ -1,0 +1,96 @@
+.course-details-custom {
+  padding: 20px;
+}
+
+.course-overview-custom {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 80px; /* Espaço entre o header e a imagem */
+}
+
+.image-container-custom {
+  flex: 1;
+}
+
+.course-image-custom {
+  width: 60%; /* Ajusta a largura da imagem para ocupar totalmente a div */
+  display: block;
+}
+
+.card-custom {
+  background-color: #011522;
+  border-radius: 8px;
+  color: white;
+  padding: 20px;
+  margin-top: 80px; /* Espaço entre o header e o card */
+  max-width: 400px; /* Limitar a largura máxima do card */
+  margin-left: auto; /* Centraliza o card na seção direita */
+}
+
+.tools-custom {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle-custom {
+  padding: 0 4px;
+}
+
+.box-custom {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red-custom {
+  background-color: #ff605c;
+}
+
+.yellow-custom {
+  background-color: #ffbd44;
+}
+
+.green-custom {
+  background-color: #00ca4e;
+}
+
+.card-content-custom h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.card-content-custom .category-custom,
+.card-content-custom .salary-custom {
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.course-description-custom,
+.course-job-market-custom,
+.course-details-info-custom {
+  margin: 20px 0;
+}
+
+.course-details-info-custom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.detail-custom {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.detail-custom span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

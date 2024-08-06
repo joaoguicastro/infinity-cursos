@@ -98,3 +98,22 @@
 .nav ul li a:hover {
   color: #73b809; /* Cor de destaque */
 }
+
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .menu-button {
+    display: block;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+  }
+
+  .nav.open ul {
+    display: flex;
+  }
+}
