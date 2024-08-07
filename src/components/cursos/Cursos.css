@@ -1,3 +1,4 @@
+/* Estilos para desktop (padrão) */
 .course-details-custom {
   padding: 20px;
 }
@@ -14,7 +15,7 @@
 }
 
 .course-image-custom {
-  width: 60%; /* Ajusta a largura da imagem para ocupar totalmente a div */
+  width: 55%; /* Ajusta a largura da imagem para ocupar menos espaço */
   display: block;
 }
 
@@ -25,7 +26,9 @@
   padding: 20px;
   margin-top: 80px; /* Espaço entre o header e o card */
   max-width: 400px; /* Limitar a largura máxima do card */
-  margin-left: auto; /* Centraliza o card na seção direita */
+  margin-right: 600px;
+  height: auto; /* Remove a altura fixa */
+  min-height: 300px; /* Define uma altura mínima */
 }
 
 .tools-custom {
@@ -62,6 +65,7 @@
 .card-content-custom h1 {
   font-size: 24px;
   margin: 0;
+  word-spacing: 0.2em; /* Aumenta o espaçamento entre as palavras */
 }
 
 .card-content-custom .category-custom,
@@ -93,4 +97,64 @@
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 768px) {
+  .course-details-custom {
+    padding: 10px;
+  }
+
+  .course-overview-custom {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .image-container-custom,
+  .card-custom {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .course-image-custom {
+    width: 80%; /* Diminui a largura da imagem em dispositivos móveis */
+  }
+
+  .card-custom {
+    margin: 20px 0;
+    max-width: none;
+    margin-left: 0;
+    min-height: 300px; /* Define uma altura mínima */
+  }
+
+  .card-content-custom h1 {
+    font-size: 20px;
+    word-spacing: 0.2em; /* Aumenta o espaçamento entre as palavras */
+  }
+
+  .card-content-custom .category-custom,
+  .card-content-custom .salary-custom {
+    font-size: 14px;
+    word-spacing: 0.2em; /* Aumenta o espaçamento entre as palavras */
+  }
+
+  .tools-custom {
+    justify-content: center;
+  }
+
+  .course-description-custom,
+  .course-job-market-custom,
+  .course-details-info-custom {
+    margin: 10px 0;
+  }
+
+  .course-details-info-custom {
+    flex-direction: column;
+  }
+
+  .detail-custom {
+    margin: 10px 0;
+  }
 }

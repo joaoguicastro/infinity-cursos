@@ -15,29 +15,29 @@ const Differentials: React.FC = () => {
         <div className="card">
           <div className="card2">
             <FaRocket className="differential-icon" />
-            <h3>Atendimento Rápido</h3>
-            <p>Resolvemos suas dúvidas e problemas de forma ágil e eficiente.</p>
+            <h3>Qualidade do Conteúdo</h3>
+            <p>Oferecemos material didático atualizado e de alta qualidade, desenvolvido por especialistas para garantir um aprendizado eficaz.</p>
           </div>
         </div>
         <div className="card">
           <div className="card2">
             <FaLaptopCode className="differential-icon" />
-            <h3>Desenvolvimento Personalizado</h3>
-            <p>Criamos soluções sob medida para atender às suas necessidades específicas.</p>
+            <h3>Experiência do Aluno</h3>
+            <p>Proporcionamos uma jornada de aprendizado envolvente e um suporte dedicado para garantir a sua satisfação e sucesso.</p>
           </div>
         </div>
         <div className="card">
           <div className="card2">
             <FaClipboardList className="differential-icon" />
-            <h3>Consultoria Completa</h3>
-            <p>Acompanhamos seu projeto do início ao fim, garantindo o sucesso em cada etapa.</p>
+            <h3>Inovação e Tecnologia</h3>
+            <p>Utilizamos tecnologias modernas e métodos inovadores para tornar o aprendizado dinâmico e adaptado às tendências atuais.</p>
           </div>
         </div>
         <div className="card">
           <div className="card2">
             <FaBullhorn className="differential-icon" />
-            <h3>Marketing Eficaz</h3>
-            <p>Planejamos e executamos estratégias de marketing que geram resultados.</p>
+            <h3>Credibilidade e Reputação</h3>
+            <p>Mantemos uma reputação sólida com cursos certificados e um histórico comprovado de resultados positivos.</p>
           </div>
         </div>
       </div>

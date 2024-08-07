@@ -1,20 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
 import designergraf from '../../assets/cursos/designgrafico.webp';
 
 const DesignerGrafico: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
 
   // Informações do curso
   const courseInfo = {
-    title: "Desenvolvimento Full",
+    title: "Designer Gráfico",
     category: "Informática",
-    salary: "R$ 1.834,74",
-    description: `O Técnico em Administração é o profissional apto a exercer atividades de apoio que envolvam gestão de recursos humanos, materiais, financeiros, mercadológicos e da informação. Esse profissional pode também atuar na gestão das mais diversas áreas de uma organização, com vistas à obtenção dos melhores níveis de produtividade, qualidade e operacionalidade, adequados ao segmento de atuação e ao cenário mercadológico, visando à competitividade do negócio.`,
-    jobMarket: `Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor terciário corresponde a quase 70% do Produto Interno Bruto (PIB), que é a soma de tudo o que o país produz, e por mais de 75% dos empregos formais. Entre as empresas que fazem parte desse setor estão: comércio, assessorias, escritórios, bancos, repartições públicas e etc. Além disso o setor secundário (indústrias).`,
+    salary: "R$ 3.000 - R$ 5.000",
+    description: "O Designer Gráfico é responsável por criar elementos visuais para comunicação, incluindo logotipos, layouts de sites, materiais publicitários e embalagens. Trabalha com design digital e impressão, desenvolve a identidade visual de marcas e empresas, edita e manipula imagens e vídeos, e colabora com clientes e equipes para entregar soluções criativas e eficazes.",
+    jobMarket: "O mercado para Designers Gráficos é forte e em crescimento, com alta demanda em publicidade, marketing, mídia digital e design de produtos. A evolução das tecnologias e a necessidade de empresas para se destacar visualmente garantem boas perspectivas de emprego. Designers com habilidades em novas ferramentas e tendências têm melhores oportunidades.",
     duration: "18 meses",
     certification: "Técnico",
     teachingMode: "Presencial"

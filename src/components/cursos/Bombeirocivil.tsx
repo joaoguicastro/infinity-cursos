@@ -1,20 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
 import bombeirocivil from '../../assets/cursos/bombeirocivil.webp';
 
 const Bombeirocivil: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
 
   // Informações do curso
   const courseInfo = {
-    title: "Desenvolvimento Full",
-    category: "Informática",
-    salary: "R$ 1.834,74",
-    description: `O Técnico em Administração é o profissional apto a exercer atividades de apoio que envolvam gestão de recursos humanos, materiais, financeiros, mercadológicos e da informação. Esse profissional pode também atuar na gestão das mais diversas áreas de uma organização, com vistas à obtenção dos melhores níveis de produtividade, qualidade e operacionalidade, adequados ao segmento de atuação e ao cenário mercadológico, visando à competitividade do negócio.`,
-    jobMarket: `Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor terciário corresponde a quase 70% do Produto Interno Bruto (PIB), que é a soma de tudo o que o país produz, e por mais de 75% dos empregos formais. Entre as empresas que fazem parte desse setor estão: comércio, assessorias, escritórios, bancos, repartições públicas e etc. Além disso o setor secundário (indústrias).`,
+    title: "Bombeiro Civil",
+    category: "Segurança",
+    salary: "R$ 2.500 - R$ 4.000",
+    description: "O Bombeiro Civil é responsável por combater incêndios, realizar resgates e prestar primeiros socorros em situações de emergência. Além disso, realiza inspeções de segurança, identifica riscos, e participa de treinamentos para manter habilidades atualizadas. Também cuida da manutenção dos equipamentos de combate a incêndio e resgate.",
+    jobMarket: "O mercado para Bombeiros Civis está em crescimento, com alta demanda devido à preocupação com segurança e prevenção de acidentes. A necessidade de manter normas de segurança e estar preparado para emergências oferece boas perspectivas de emprego, especialmente em indústrias, empresas e eventos. Profissionais com treinamento especializado têm melhores oportunidades.",
     duration: "18 meses",
     certification: "Técnico",
     teachingMode: "Presencial"

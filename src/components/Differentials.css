@@ -1,3 +1,4 @@
+/* Estilos para desktop (padrão) */
 .differentials {
   display: flex;
   justify-content: space-between;
@@ -34,19 +35,9 @@
   gap: 20px;
 }
 
-.card {
+.card, .card2 {
   width: 100%;
   max-width: 250px;
-  height: 300px;
-  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-  border-radius: 20px;
-  transition: all 0.3s;
-}
-
-.card2 {
-  width: 100%;
-  max-width: 250px;
-  height: 300px;
   background-color: #1a1a1a;
   transition: all 0.2s;
   border-radius: 20px;
@@ -56,6 +47,13 @@
   justify-content: center;
   text-align: center;
   color: #ffffff;
+  padding: 20px;
+  height: auto;
+  min-height: 320px; /* Define uma altura mínima para garantir consistência */
+}
+
+.card2 {
+  background-color: #1a1a1a;
 }
 
 .card2:hover {
@@ -79,4 +77,55 @@
 
 .card2 p {
   font-size: 1.2rem;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 768px) {
+  .differentials {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .differentials-content {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .differentials-content h2 {
+    font-size: 2rem;
+  }
+
+  .differentials-content p {
+    font-size: 1.2rem;
+  }
+
+  .differentials-examples {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card, .card2 {
+    max-width: 100%;
+    height: auto;
+    min-height: 300px; /* Define uma altura mínima para garantir consistência */
+    padding: 15px; /* Ajuste do padding para melhor visualização em telas menores */
+  }
+
+  .card2 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px; /* Reduz a margem inferior para melhor ajuste em telas menores */
+  }
+
+  .card2 p {
+    font-size: 1rem;
+    line-height: 1.4; /* Ajuste da altura da linha para melhorar a legibilidade */
+  }
+
+  .differential-icon {
+    font-size: 2rem; /* Reduz o tamanho do ícone para melhor ajuste em telas menores */
+    margin-bottom: 8px;
+  }
 }

@@ -1,22 +1,20 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
 import bombeiromirim from '../../assets/cursos/bombeiromirim.webp';
 
 const Bombeiromirim: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
 
   // Informações do curso
   const courseInfo = {
-    title: "Desenvolvimento Full",
-    category: "Informática",
-    salary: "R$ 1.834,74",
-    description: `O Técnico em Administração é o profissional apto a exercer atividades de apoio que envolvam gestão de recursos humanos, materiais, financeiros, mercadológicos e da informação. Esse profissional pode também atuar na gestão das mais diversas áreas de uma organização, com vistas à obtenção dos melhores níveis de produtividade, qualidade e operacionalidade, adequados ao segmento de atuação e ao cenário mercadológico, visando à competitividade do negócio.`,
-    jobMarket: `Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor terciário corresponde a quase 70% do Produto Interno Bruto (PIB), que é a soma de tudo o que o país produz, e por mais de 75% dos empregos formais. Entre as empresas que fazem parte desse setor estão: comércio, assessorias, escritórios, bancos, repartições públicas e etc. Além disso o setor secundário (indústrias).`,
-    duration: "18 meses",
-    certification: "Técnico",
+    title: "Bombeiro Mirim",
+    category: "Educação",
+    salary: "Conhecimento e Disciplina",
+    description: "O programa Bombeiro Mirim oferece aos jovens educação sobre segurança contra incêndios, primeiros socorros e práticas de prevenção. Ele promove o desenvolvimento de habilidades como trabalho em equipe, liderança e responsabilidade, além de proporcionar treinamento prático e fomentar a disciplina e a ética.",
+    jobMarket: "O programa Bombeiro Mirim contribui para o desenvolvimento pessoal e social dos jovens, preparando-os para futuras oportunidades e fomentando habilidades valiosas. Embora não ofereça remuneração direta, pode abrir portas para oportunidades em áreas de segurança e emergências e ajudar a formar cidadãos mais conscientes e responsáveis.",
+    duration: "Variável",
+    certification: "Participação",
     teachingMode: "Presencial"
   };
 

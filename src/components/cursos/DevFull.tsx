@@ -1,20 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
 import devfull from '../../assets/cursos/desenvolvedorfullstack.webp';
 
 const DevFull: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
 
   // Informações do curso
   const courseInfo = {
-    title: "Desenvolvimento Full",
+    title: "Desenvolvedor Full Stack",
     category: "Informática",
-    salary: "R$ 1.834,74",
-    description: `O Técnico em Administração é o profissional apto a exercer atividades de apoio que envolvam gestão de recursos humanos, materiais, financeiros, mercadológicos e da informação. Esse profissional pode também atuar na gestão das mais diversas áreas de uma organização, com vistas à obtenção dos melhores níveis de produtividade, qualidade e operacionalidade, adequados ao segmento de atuação e ao cenário mercadológico, visando à competitividade do negócio.`,
-    jobMarket: `Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor terciário corresponde a quase 70% do Produto Interno Bruto (PIB), que é a soma de tudo o que o país produz, e por mais de 75% dos empregos formais. Entre as empresas que fazem parte desse setor estão: comércio, assessorias, escritórios, bancos, repartições públicas e etc. Além disso o setor secundário (indústrias).`,
+    salary: "R$ 8.000 - R$ 14.000",
+    description: "O Desenvolvedor Full Stack é responsável pelo desenvolvimento tanto do front-end quanto do back-end de aplicações web. Ele cria interfaces de usuário intuitivas, implementa lógica de negócios e integra sistemas, participa do ciclo completo de desenvolvimento de software, e realiza testes e depuração para garantir a qualidade e a funcionalidade das aplicações.",
+    jobMarket: "O mercado para Desenvolvedores Full Stack é robusto e em expansão, com alta demanda por profissionais capazes de trabalhar em todas as camadas de desenvolvimento. As empresas valorizam habilidades em diversas tecnologias e ferramentas, garantindo boas perspectivas de emprego e oportunidades de crescimento na área.",
     duration: "18 meses",
     certification: "Técnico",
     teachingMode: "Presencial"

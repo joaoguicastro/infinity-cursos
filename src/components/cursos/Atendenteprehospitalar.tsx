@@ -1,23 +1,22 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
 import atendenteprehospitalar from '../../assets/cursos/atendenteprehospitalar.webp';
 
 const Atendenteprehospitalar: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
 
   // Informações do curso
   const courseInfo = {
-    title: "Desenvolvimento Full",
-    category: "Informática",
-    salary: "R$ 1.834,74",
-    description: `O Técnico em Administração é o profissional apto a exercer atividades de apoio que envolvam gestão de recursos humanos, materiais, financeiros, mercadológicos e da informação. Esse profissional pode também atuar na gestão das mais diversas áreas de uma organização, com vistas à obtenção dos melhores níveis de produtividade, qualidade e operacionalidade, adequados ao segmento de atuação e ao cenário mercadológico, visando à competitividade do negócio.`,
-    jobMarket: `Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor terciário corresponde a quase 70% do Produto Interno Bruto (PIB), que é a soma de tudo o que o país produz, e por mais de 75% dos empregos formais. Entre as empresas que fazem parte desse setor estão: comércio, assessorias, escritórios, bancos, repartições públicas e etc. Além disso o setor secundário (indústrias).`,
+    title: "Atendente Pré-Hospitalar",
+    category: "Saúde",
+    salary: "R$ 2.000 - R$ 3.500",
+    description: "O Atendente Pré-Hospitalar é responsável por prestar primeiros socorros e atendimento inicial em situações de emergência, até que o paciente possa receber cuidados mais avançados em um ambiente hospitalar. Entre suas funções estão: realizar avaliações rápidas do estado do paciente, administrar tratamentos de emergência, estabilizar pacientes, e colaborar com equipes de resgate e transporte para garantir que o paciente receba o tratamento adequado o mais rápido possível.",
+    jobMarket: "O mercado para Atendentes Pré-Hospitalares está em crescimento devido ao aumento da demanda por serviços de emergência e à expansão do setor de saúde. A necessidade de profissionais qualificados é alta, especialmente em áreas metropolitanas e para operações de resgate. O envelhecimento da população e o aumento dos acidentes de trânsito e outras emergências contribuem para boas perspectivas de emprego.",
     duration: "18 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
+
   };
 
   return (

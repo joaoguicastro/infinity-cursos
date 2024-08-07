@@ -1,20 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
 import marketingdigital from '../../assets/cursos/marketingdigital.webp';
 
 const MarketingDigital: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
 
   // Informações do curso
   const courseInfo = {
-    title: "Desenvolvimento Full",
-    category: "Informática",
-    salary: "R$ 1.834,74",
-    description: `O Técnico em Administração é o profissional apto a exercer atividades de apoio que envolvam gestão de recursos humanos, materiais, financeiros, mercadológicos e da informação. Esse profissional pode também atuar na gestão das mais diversas áreas de uma organização, com vistas à obtenção dos melhores níveis de produtividade, qualidade e operacionalidade, adequados ao segmento de atuação e ao cenário mercadológico, visando à competitividade do negócio.`,
-    jobMarket: `Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor terciário corresponde a quase 70% do Produto Interno Bruto (PIB), que é a soma de tudo o que o país produz, e por mais de 75% dos empregos formais. Entre as empresas que fazem parte desse setor estão: comércio, assessorias, escritórios, bancos, repartições públicas e etc. Além disso o setor secundário (indústrias).`,
+    title: "Marketing Digital",
+    category: "Negócios",
+    salary: "R$ 5.000 - R$ 10.000",
+    description: "O curso de Marketing Digital capacita os alunos para planejar, criar e gerenciar campanhas de marketing digital em diversos canais. Os alunos aprendem a implementar estratégias de SEO e SEM, analisar métricas de desempenho, criar e gerenciar conteúdo para redes sociais, e desenvolver estratégias de marca para fortalecer a presença digital.",
+    jobMarket: "O mercado para profissionais de Marketing Digital está em expansão, com alta demanda por especialistas em SEO, SEM, análise de dados e gerenciamento de redes sociais. A importância crescente da presença online e a evolução das plataformas digitais oferecem boas perspectivas de emprego e oportunidades de crescimento.",
     duration: "18 meses",
     certification: "Técnico",
     teachingMode: "Presencial"

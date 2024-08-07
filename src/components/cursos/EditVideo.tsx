@@ -1,20 +1,17 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
 import editvideo from '../../assets/cursos/edicaodevideo.webp';
 
 const EditVideo: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
-
   // Informações do curso
   const courseInfo = {
-    title: "Desenvolvimento Full",
+    title: "Edição de Vídeo",
     category: "Informática",
-    salary: "R$ 1.834,74",
-    description: `O Técnico em Administração é o profissional apto a exercer atividades de apoio que envolvam gestão de recursos humanos, materiais, financeiros, mercadológicos e da informação. Esse profissional pode também atuar na gestão das mais diversas áreas de uma organização, com vistas à obtenção dos melhores níveis de produtividade, qualidade e operacionalidade, adequados ao segmento de atuação e ao cenário mercadológico, visando à competitividade do negócio.`,
-    jobMarket: `Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor terciário corresponde a quase 70% do Produto Interno Bruto (PIB), que é a soma de tudo o que o país produz, e por mais de 75% dos empregos formais. Entre as empresas que fazem parte desse setor estão: comércio, assessorias, escritórios, bancos, repartições públicas e etc. Além disso o setor secundário (indústrias).`,
+    salary: "R$ 3.000 - R$ 6.000",
+    description: "O Editor de Vídeo é responsável por cortar, organizar e ajustar clipes de vídeo e áudio para criar um produto final coeso e atraente. Ele desenvolve vídeos para diferentes formatos e plataformas, aplica correção de cor e efeitos visuais, sincroniza áudio e vídeo, e colabora com a equipe de produção para garantir a visão criativa do projeto.",
+    jobMarket: "O mercado para Editores de Vídeo é forte e em crescimento, com alta demanda por conteúdo visual em mídias digitais e sociais. A necessidade de conteúdo de qualidade para marketing e entretenimento garante boas oportunidades de emprego. Profissionais com experiência em software de edição e habilidades para diferentes plataformas têm boas perspectivas de carreira.",
     duration: "18 meses",
     certification: "Técnico",
     teachingMode: "Presencial"

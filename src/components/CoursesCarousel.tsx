@@ -8,7 +8,6 @@ import edicao from '../assets/cursos/edicaodevideo.webp';
 import design from '../assets/cursos/designgrafico.webp';
 import marketing from '../assets/cursos/marketingdigital.webp';
 import empreendedorismo from '../assets/cursos/empreendedorismo.webp';
-import cabeleleiroprof from '../assets/cursos/cabeleleiroprof.webp';
 import auxadm from '../assets/cursos/auxadm.webp';
 import atendentefarmacia from '../assets/cursos/atendentefarmacia.webp';
 import atendenteprehospitalar from '../assets/cursos/atendenteprehospitalar.webp';
@@ -23,7 +22,7 @@ const courses = [
   { id: 5, name: "Designer Grafico", category: "Informática", image: design, route: "/designgrafico" },
   { id: 6, name: "Marketing Digital", category: "Informática", image: marketing, route: "/marketingdigital" },
   { id: 7, name: "Empreendedorismo", category: "Negócios", image: empreendedorismo, route: "/empreendedorismo" },
-  { id: 8, name: "Auxiliar Administrativo", category: "Negócios", image: auxadm, route: "/auxadm" },
+  { id: 8, name: "Auxiliar Administrativo", category: "Negócios", image: auxadm, route: "/auxiliaradministrativo" },
   { id: 9, name: "Atendente Farmacia", category: "Negócios", image: atendentefarmacia, route: "/atendentefarmacia" },
   { id: 10, name: "Atendimento Pre Hospitalar", category: "Saúde", image: atendenteprehospitalar, route: "/atendenteprehospitalar" },
   { id: 11, name: "Bombeiro Civil", category: "Saúde", image: bombeirocivil, route: "/bombeirocivil" },

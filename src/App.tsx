@@ -49,6 +49,7 @@ const App: React.FC = () => {
         <Route path="/atendenteprehospitalar" element={<Atendenteprehospitalar />} />
         <Route path="/bombeiromirim" element={<Bombeiromirim />} />
         <Route path="/bombeirocivil" element={<Bombeirocivil />} />
+        <Route path="/auxiliaradministrativo" element={<Auxadm />} />
       </Routes>
     </Router>
   );

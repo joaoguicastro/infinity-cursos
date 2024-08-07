@@ -1,4 +1,4 @@
-/* src/App.css */
+/* Estilos para desktop (padrão) */
 .App {
   text-align: center;
 }
@@ -19,4 +19,16 @@ body {
 .content {
   padding-top: 80px; /* Espaço para o header fixo */
   width: 100%;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 0 10px;
+  }
+
+  .content {
+    padding-top: 60px; /* Ajusta o espaço para o header fixo em telas menores */
+  }
 }

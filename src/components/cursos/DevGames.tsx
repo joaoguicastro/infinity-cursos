@@ -1,20 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
 import devgames from '../../assets/cursos/desenvolvedordegames.webp';
 
 const DevGames: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
 
   // Informações do curso
   const courseInfo = {
-    title: "Desenvolvimento Full",
+    title: "Desenvolvedor de Games",
     category: "Informática",
-    salary: "R$ 1.834,74",
-    description: `O Técnico em Administração é o profissional apto a exercer atividades de apoio que envolvam gestão de recursos humanos, materiais, financeiros, mercadológicos e da informação. Esse profissional pode também atuar na gestão das mais diversas áreas de uma organização, com vistas à obtenção dos melhores níveis de produtividade, qualidade e operacionalidade, adequados ao segmento de atuação e ao cenário mercadológico, visando à competitividade do negócio.`,
-    jobMarket: `Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor terciário corresponde a quase 70% do Produto Interno Bruto (PIB), que é a soma de tudo o que o país produz, e por mais de 75% dos empregos formais. Entre as empresas que fazem parte desse setor estão: comércio, assessorias, escritórios, bancos, repartições públicas e etc. Além disso o setor secundário (indústrias).`,
+    salary: "R$ 7.000 - R$ 12.000",
+    description: "O Desenvolvedor de Games é responsável por criar e programar jogos para diversas plataformas, como consoles, PC e dispositivos móveis. Suas tarefas incluem o design de mecânicas de jogo, programação e codificação usando ferramentas como Unity e Unreal Engine, colaboração com artistas e designers, e testes para garantir a qualidade e a experiência de usuário do jogo.",
+    jobMarket: "O mercado para Desenvolvedores de Games está em expansão, com alta demanda devido ao crescimento da indústria de jogos e do interesse por jogos digitais. As oportunidades são amplas em empresas de desenvolvimento de jogos, estúdios independentes e setores emergentes como AR e VR. Profissionais com habilidades avançadas em programação e tecnologias emergentes têm boas perspectivas de carreira.",
     duration: "18 meses",
     certification: "Técnico",
     teachingMode: "Presencial"

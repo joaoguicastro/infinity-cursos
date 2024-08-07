@@ -1,21 +1,19 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
 import informaticaprof from '../../assets/cursos/informaticaprof.webp';
 
 const Informaticaprof: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
 
   // Informações do curso
   const courseInfo = {
     title: "Informática Profissional",
-    category: "Informática",
-    salary: "R$ 1.834,74",
-    description: `O Técnico em Administração é o profissional apto a exercer atividades de apoio que envolvam gestão de recursos humanos, materiais, financeiros, mercadológicos e da informação. Esse profissional pode também atuar na gestão das mais diversas áreas de uma organização, com vistas à obtenção dos melhores níveis de produtividade, qualidade e operacionalidade, adequados ao segmento de atuação e ao cenário mercadológico, visando à competitividade do negócio.`,
-    jobMarket: `Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor terciário corresponde a quase 70% do Produto Interno Bruto (PIB), que é a soma de tudo o que o país produz, e por mais de 75% dos empregos formais. Entre as empresas que fazem parte desse setor estão: comércio, assessorias, escritórios, bancos, repartições públicas e etc. Além disso o setor secundário (indústrias).`,
-    duration: "18 meses",
+    category: "Tecnologia",
+    salary: "R$ 3.500 - R$ 7.000",
+    description: "O curso de Informática Profissional capacita os alunos para oferecer suporte técnico, desenvolver sistemas de software, gerenciar redes de computadores, trabalhar com bancos de dados e implementar práticas de segurança da informação. O curso aborda diagnóstico e solução de problemas técnicos, desenvolvimento de aplicações, gerenciamento de redes e proteção contra ameaças cibernéticas.",
+    jobMarket: "O mercado para profissionais de informática é robusto e em crescimento, com alta demanda por suporte técnico, desenvolvimento de sistemas, gerenciamento de redes e segurança da informação. A digitalização e a necessidade de tecnologia garantem boas perspectivas de emprego e crescimento para profissionais qualificados.",
+    duration: "12 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
   };

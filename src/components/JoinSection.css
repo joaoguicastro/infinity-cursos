@@ -1,85 +1,125 @@
-/* src/components/JoinSection.css */
+/* Estilos para desktop (padrão) */
 .join-section {
-    padding: 50px 20px;
-    background-color: #73b809;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: relative; /* Adicionado para controle do posicionamento */
+  padding: 50px 20px;
+  background-color: #73b809;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative; /* Adicionado para controle do posicionamento */
+}
+
+.join-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left-content {
+  flex: 1;
+  text-align: left;
+}
+
+.center-content {
+  flex: 1;
+  text-align: center;
+}
+
+.right-content {
+  flex: 1;
+  text-align: right;
+}
+
+.highlight-text {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.highlight {
+  background-color: #fff;
+  color: #73b809;
+  padding: 0 10px;
+}
+
+.join-button {
+  background-color: #000;
+  margin-right: 40px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #282936;
+}
+
+.logos-container {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  position: absolute; /* Ajustado para posicionamento absoluto */
+  bottom: 0; /* Posiciona no final da seção */
+}
+
+.mini-logo {
+  width: 2%; /* Ajustado para caber o número necessário de logos */
+  height: auto;
+  margin: 0 5px;
+}
+
+.mini-logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 768px) {
+  .join-section {
+      padding: 20px 10px;
   }
-  
+
   .join-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
-  
-  .left-content {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .center-content {
-    flex: 1;
-    text-align: center;
-  }
-  
+
+  .left-content,
+  .center-content,
   .right-content {
-    flex: 1;
-    text-align: right;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
   }
-  
+
   .highlight-text {
-    font-size: 2rem;
-    color: #fff;
+      font-size: 1.5rem;
   }
-  
-  .highlight {
-    background-color: #fff;
-    color: #73b809;
-    padding: 0 10px;
-  }
-  
+
   .join-button {
-    background-color: #000;
-    margin-right: 40px;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
+      margin-right: 0;
+      padding: 8px 16px;
+      font-size: 0.9rem;
   }
-  
-  .join-button:hover {
-    background-color: #282936;
-  }
-  
+
   .logos-container {
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px 0;
-    position: absolute; /* Ajustado para posicionamento absoluto */
-    bottom: 0; /* Posiciona no final da seção */
+      position: relative;
+      bottom: auto;
   }
-  
+
   .mini-logo {
-    width: 2%; /* Ajustado para caber o número necessário de logos */
-    height: auto;
-    margin: 0 5px;
+      width: 10%;
+      margin: 5px;
   }
-  
-  .mini-logo img {
-    width: 100%;
-    height: auto;
-  }
-  
+}

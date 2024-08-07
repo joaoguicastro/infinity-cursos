@@ -1,20 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
 import empreendedorismo from '../../assets/cursos/empreendedorismo.webp';
 
 const Empreendedorismo: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
 
   // Informações do curso
   const courseInfo = {
-    title: "Desenvolvimento Full",
-    category: "Informática",
-    salary: "R$ 1.834,74",
-    description: `O Técnico em Administração é o profissional apto a exercer atividades de apoio que envolvam gestão de recursos humanos, materiais, financeiros, mercadológicos e da informação. Esse profissional pode também atuar na gestão das mais diversas áreas de uma organização, com vistas à obtenção dos melhores níveis de produtividade, qualidade e operacionalidade, adequados ao segmento de atuação e ao cenário mercadológico, visando à competitividade do negócio.`,
-    jobMarket: `Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), o setor terciário corresponde a quase 70% do Produto Interno Bruto (PIB), que é a soma de tudo o que o país produz, e por mais de 75% dos empregos formais. Entre as empresas que fazem parte desse setor estão: comércio, assessorias, escritórios, bancos, repartições públicas e etc. Além disso o setor secundário (indústrias).`,
+    title: "Empreendedorismo",
+    category: "Negócios",
+    salary: "Variável",
+    description: "O curso de Empreendedorismo prepara os alunos para identificar oportunidades de mercado, desenvolver planos de negócios e estratégias, gerenciar operações e equipes, compreender finanças e buscar investimentos, desenvolver estratégias de marketing e vendas, e implementar inovações. O curso foca em habilidades de gestão, liderança e adaptação a mudanças de mercado.",
+    jobMarket: "O mercado para empreendedores é dinâmico e diversificado, com oportunidades em várias indústrias e um ambiente crescente para inovação e criação de novos negócios. Empreendedores têm a oportunidade de criar e gerenciar seus próprios negócios, contribuindo para o desenvolvimento econômico. Habilidades em gestão, inovação e marketing são altamente valorizadas.",
     duration: "18 meses",
     certification: "Técnico",
     teachingMode: "Presencial"

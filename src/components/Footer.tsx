@@ -2,7 +2,7 @@
 import React from 'react';
 import './Footer.css';
 import logo from '../assets/Logotipo-vertical-normal.png';
-import { FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, FaEnvelope, FaPeopleArrows } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
@@ -20,15 +20,15 @@ const Footer: React.FC = () => {
           <div className="social-icons">
             <a href="https://www.instagram.com/infinitycursosofc/" className='link'> <FaInstagram /> </a>
             <a href="https://wa.me/5591207549" className='link'><FaWhatsapp /></a>
-            <FaEnvelope />
+            <a href="mailto:redeinfinitycursos@gmail.com"><FaEnvelope /> </a>
+            <a href="https://wa.me/5591207549"><FaPeopleArrows/> </a>
           </div>
         </div>
         <div className="footer-section">
           <h3>Escola</h3>
           <p>Início</p>
           <p>Quem somos</p>
-          <p>Serviços</p>
-          <p>Cases</p>
+          <p>Cursos</p>
           <p>Fale conosco</p>
         </div>
       </div>
