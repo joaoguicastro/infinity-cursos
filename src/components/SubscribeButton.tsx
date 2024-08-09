@@ -3,7 +3,7 @@ import './SubscribeButton.css';
 
 const SubscribeButton: React.FC = () => {
   return (
-    <a href='https://wa.me/5591207549'>
+    <a href='https://w.app/infinitycursos'>
       <button className="botao">
         Inscreva-se já
       </button>

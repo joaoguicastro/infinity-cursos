@@ -14,7 +14,11 @@ const JoinSection: React.FC = () => {
           <h2>Transformando<br />ideias em realidade</h2>
         </div>
         <div className="right-content">
-          <button className="join-button">Matricule-se já</button>
+          <a href="https://w.app/infinitycursos">
+            <button className="join-button">
+              Matricule-se já
+            </button>
+          </a>
         </div>
       </div>
       <div className="logos-container">

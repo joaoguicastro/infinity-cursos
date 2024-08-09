@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           <h3>Contato</h3>
           <p>(85) 9 9120-7549</p>
           <p>Shopping Pitaguary, Subsolo S2 e S3</p>
-          <p>Rua Joao de Alencar, 113 – Centro, Maracanau – CE, 61901-085</p>
+          <p>Rua Joao de Alencar, 113 – Centro, Maracanau – CE, 61900-150</p>
           <p>redeinfinitycursos@gmail.com</p>
           <div className="social-icons">
             <a href="https://www.instagram.com/infinitycursosofc/" className='link'> <FaInstagram /> </a>
