@@ -12,7 +12,7 @@ const EditVideo: React.FC = () => {
     salary: "R$ 3.000 - R$ 6.000",
     description: "O Editor de Vídeo é responsável por cortar, organizar e ajustar clipes de vídeo e áudio para criar um produto final coeso e atraente. Ele desenvolve vídeos para diferentes formatos e plataformas, aplica correção de cor e efeitos visuais, sincroniza áudio e vídeo, e colabora com a equipe de produção para garantir a visão criativa do projeto.",
     jobMarket: "O mercado para Editores de Vídeo é forte e em crescimento, com alta demanda por conteúdo visual em mídias digitais e sociais. A necessidade de conteúdo de qualidade para marketing e entretenimento garante boas oportunidades de emprego. Profissionais com experiência em software de edição e habilidades para diferentes plataformas têm boas perspectivas de carreira.",
-    duration: "18 meses",
+    duration: "8 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
   };

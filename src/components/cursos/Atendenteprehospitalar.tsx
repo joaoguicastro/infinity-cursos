@@ -13,7 +13,7 @@ const Atendenteprehospitalar: React.FC = () => {
     salary: "R$ 2.000 - R$ 3.500",
     description: "O Atendente Pré-Hospitalar é responsável por prestar primeiros socorros e atendimento inicial em situações de emergência, até que o paciente possa receber cuidados mais avançados em um ambiente hospitalar. Entre suas funções estão: realizar avaliações rápidas do estado do paciente, administrar tratamentos de emergência, estabilizar pacientes, e colaborar com equipes de resgate e transporte para garantir que o paciente receba o tratamento adequado o mais rápido possível.",
     jobMarket: "O mercado para Atendentes Pré-Hospitalares está em crescimento devido ao aumento da demanda por serviços de emergência e à expansão do setor de saúde. A necessidade de profissionais qualificados é alta, especialmente em áreas metropolitanas e para operações de resgate. O envelhecimento da população e o aumento dos acidentes de trânsito e outras emergências contribuem para boas perspectivas de emprego.",
-    duration: "18 meses",
+    duration: "8 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
 

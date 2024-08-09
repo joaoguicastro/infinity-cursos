@@ -13,7 +13,7 @@ const DesignerGrafico: React.FC = () => {
     salary: "R$ 3.000 - R$ 5.000",
     description: "O Designer Gráfico é responsável por criar elementos visuais para comunicação, incluindo logotipos, layouts de sites, materiais publicitários e embalagens. Trabalha com design digital e impressão, desenvolve a identidade visual de marcas e empresas, edita e manipula imagens e vídeos, e colabora com clientes e equipes para entregar soluções criativas e eficazes.",
     jobMarket: "O mercado para Designers Gráficos é forte e em crescimento, com alta demanda em publicidade, marketing, mídia digital e design de produtos. A evolução das tecnologias e a necessidade de empresas para se destacar visualmente garantem boas perspectivas de emprego. Designers com habilidades em novas ferramentas e tendências têm melhores oportunidades.",
-    duration: "18 meses",
+    duration: "8 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
   };

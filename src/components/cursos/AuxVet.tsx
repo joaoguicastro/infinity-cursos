@@ -1,21 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import marketingdigital from '../../assets/cursos/marketingdigital.webp';
+import auxiliarvet from '../../assets/cursos/auxiliarvet.webp';
 
-const MarketingDigital: React.FC = () => {
+const AuxVet: React.FC = () => {
 
   // Informações do curso
   const courseInfo = {
-    title: "Marketing Digital",
-    category: "Negócios",
-    salary: "R$ 5.000 - R$ 10.000",
-    description: "O curso de Marketing Digital capacita os alunos para planejar, criar e gerenciar campanhas de marketing digital em diversos canais. Os alunos aprendem a implementar estratégias de SEO e SEM, analisar métricas de desempenho, criar e gerenciar conteúdo para redes sociais, e desenvolver estratégias de marca para fortalecer a presença digital.",
-    jobMarket: "O mercado para profissionais de Marketing Digital está em expansão, com alta demanda por especialistas em SEO, SEM, análise de dados e gerenciamento de redes sociais. A importância crescente da presença online e a evolução das plataformas digitais oferecem boas perspectivas de emprego e oportunidades de crescimento.",
-    duration: "6 meses",
+    title: "Auxiliar Veterinário",
+    category: "Saúde Animal",
+    salary: "R$ 2.000 - R$ 4.000",
+    description: "O curso de Auxiliar Veterinário capacita os alunos para auxiliar o veterinário durante consultas e procedimentos clínicos, realizar cuidados básicos com os animais, manter a limpeza e organização do ambiente e equipamentos, atender aos tutores de animais e manter registros precisos dos atendimentos e tratamentos.",
+    jobMarket: "O mercado para Auxiliares Veterinários é estável e em crescimento, com demanda crescente devido ao aumento da preocupação com a saúde animal e o número de animais de estimação. Profissionais podem encontrar oportunidades em clínicas veterinárias, hospitais de animais e instituições de pesquisa.",
+    duration: "8 meses",
     certification: "Técnico",
-    teachingMode: "Presencial"
+    teachingMode: "Online"
   };
 
   return (
@@ -24,7 +25,7 @@ const MarketingDigital: React.FC = () => {
       <div className="course-details-custom">
         <div className="course-overview-custom">
           <div className="image-container-custom">
-            <img src={marketingdigital} alt="Informática Profissional" className="course-image-custom" />
+            <img src={auxiliarvet} alt="Informática Profissional" className="course-image-custom" />
           </div>
           <div className="card-custom">
             <div className="tools-custom">
@@ -73,4 +74,4 @@ const MarketingDigital: React.FC = () => {
   );
 };
 
-export default MarketingDigital;
+export default AuxVet;

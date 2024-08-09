@@ -1,21 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import marketingdigital from '../../assets/cursos/marketingdigital.webp';
+import agenteportuario from '../../assets/cursos/agenteportuario.webp';
 
-const MarketingDigital: React.FC = () => {
+const AgentePortuario: React.FC = () => {
 
   // Informações do curso
   const courseInfo = {
-    title: "Marketing Digital",
-    category: "Negócios",
-    salary: "R$ 5.000 - R$ 10.000",
-    description: "O curso de Marketing Digital capacita os alunos para planejar, criar e gerenciar campanhas de marketing digital em diversos canais. Os alunos aprendem a implementar estratégias de SEO e SEM, analisar métricas de desempenho, criar e gerenciar conteúdo para redes sociais, e desenvolver estratégias de marca para fortalecer a presença digital.",
-    jobMarket: "O mercado para profissionais de Marketing Digital está em expansão, com alta demanda por especialistas em SEO, SEM, análise de dados e gerenciamento de redes sociais. A importância crescente da presença online e a evolução das plataformas digitais oferecem boas perspectivas de emprego e oportunidades de crescimento.",
-    duration: "6 meses",
+    title: "Agente Portuário",
+    category: "Logística",
+    salary: "R$ 3.500 - R$ 6.000",
+    description: "O curso de Agente Portuário capacita os alunos para coordenar e supervisionar operações de carga e descarga no porto, gerenciar a logística e o planejamento portuário, lidar com a documentação e regulamentação, assegurar a segurança e conformidade com normas, e coordenar com transportadoras e autoridades portuárias.",
+    jobMarket: "O mercado para Agentes Portuários é robusto, com demanda impulsionada pelo comércio internacional e pela necessidade de eficiência na logística portuária. A função oferece boas oportunidades de emprego e perspectivas de crescimento, especialmente em portos grandes e movimentados.",
+    duration: "12 meses",
     certification: "Técnico",
-    teachingMode: "Presencial"
+    teachingMode: "Online"
   };
 
   return (
@@ -24,7 +25,7 @@ const MarketingDigital: React.FC = () => {
       <div className="course-details-custom">
         <div className="course-overview-custom">
           <div className="image-container-custom">
-            <img src={marketingdigital} alt="Informática Profissional" className="course-image-custom" />
+            <img src={agenteportuario} alt="Informática Profissional" className="course-image-custom" />
           </div>
           <div className="card-custom">
             <div className="tools-custom">
@@ -73,4 +74,4 @@ const MarketingDigital: React.FC = () => {
   );
 };
 
-export default MarketingDigital;
+export default AgentePortuario;

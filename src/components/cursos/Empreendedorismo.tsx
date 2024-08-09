@@ -13,7 +13,7 @@ const Empreendedorismo: React.FC = () => {
     salary: "Variável",
     description: "O curso de Empreendedorismo prepara os alunos para identificar oportunidades de mercado, desenvolver planos de negócios e estratégias, gerenciar operações e equipes, compreender finanças e buscar investimentos, desenvolver estratégias de marketing e vendas, e implementar inovações. O curso foca em habilidades de gestão, liderança e adaptação a mudanças de mercado.",
     jobMarket: "O mercado para empreendedores é dinâmico e diversificado, com oportunidades em várias indústrias e um ambiente crescente para inovação e criação de novos negócios. Empreendedores têm a oportunidade de criar e gerenciar seus próprios negócios, contribuindo para o desenvolvimento econômico. Habilidades em gestão, inovação e marketing são altamente valorizadas.",
-    duration: "18 meses",
+    duration: "8 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
   };

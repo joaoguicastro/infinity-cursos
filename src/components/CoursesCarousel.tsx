@@ -13,6 +13,26 @@ import atendentefarmacia from '../assets/cursos/atendentefarmacia.webp';
 import atendenteprehospitalar from '../assets/cursos/atendenteprehospitalar.webp';
 import bombeirocivil from '../assets/cursos/bombeirocivil.webp';
 import bombeiromirim from '../assets/cursos/bombeiromirim.webp';
+import auxiliarvet from '../assets/cursos/auxiliarvet.webp';
+import coletasangue from '../assets/cursos/coletasangue.webp';
+import agentecomunitario from '../assets/cursos/agentecomunitario.webp'
+import agenteendemias from '../assets/cursos/agenteendemias.webp'
+import agenteportuario from '../assets/cursos/agenteportuario.webp'
+import auxiliarnecropsia from '../assets/cursos/auxiliarnecropsia.webp'
+import auxiliarrh from '../assets/cursos/auxiliarrh.webp'
+import auxiliarsala from '../assets/cursos/auxiliarsala.webp'
+import auxiliarsaudebucal from '../assets/cursos/auxiliarsaudebucal.webp'
+import auxiliarsegtrabalho from '../assets/cursos/auxiliarseguranca.webp'
+import auxiliarfarmaceutico from '../assets/cursos/auxiliarfarmaceutico.webp'
+import auxiliardelaboratorio from '../assets/cursos/auxiliardelaboratorio.webp'
+import cuidadordeidosos from '../assets/cursos/cuidadordeidosos.webp'
+import defesacivil from '../assets/cursos/defesacivil.webp'
+import fiscaldomeioambiente from  '../assets/cursos/ficaldomeioambiente.webp'
+import gestaohospitalar from '../assets/cursos/gestaohospitalar.webp'
+import guardamunicipal from '../assets/cursos/guardamunicipal.webp'
+
+
+
 
 const courses = [
   { id: 1, name: "Informatica Profissional", category: "Informática", image: informaticaprof, route: "/informaticaprof" },
@@ -22,11 +42,28 @@ const courses = [
   { id: 5, name: "Designer Grafico", category: "Informática", image: design, route: "/designgrafico" },
   { id: 6, name: "Marketing Digital", category: "Informática", image: marketing, route: "/marketingdigital" },
   { id: 7, name: "Empreendedorismo", category: "Negócios", image: empreendedorismo, route: "/empreendedorismo" },
-  { id: 8, name: "Auxiliar Administrativo", category: "Negócios", image: auxadm, route: "/auxiliaradministrativo" },
+  { id: 8, name: "Auxiliar Administrativo", category: "Online", image: auxadm, route: "/auxiliaradministrativo" },
   { id: 9, name: "Atendente Farmacia", category: "Negócios", image: atendentefarmacia, route: "/atendentefarmacia" },
   { id: 10, name: "Atendimento Pre Hospitalar", category: "Saúde", image: atendenteprehospitalar, route: "/atendenteprehospitalar" },
   { id: 11, name: "Bombeiro Civil", category: "Saúde", image: bombeirocivil, route: "/bombeirocivil" },
   { id: 12, name: "Bombeiro Mirim", category: "Saúde", image: bombeiromirim, route: "/bombeiromirim" },
+  { id: 13, name: "Auxiliar Veterinario", category: "Saúde", image: auxiliarvet, route: "/auxiliarveterinario" }, 
+  { id: 14, name: "Coleta de Sangue", category: "Saúde", image: coletasangue, route: "/coletadesangue" },  
+  { id: 15, name: "Agente Comunitario", category: "Online", image: agentecomunitario, route: "/agentecomunitario" },  
+  { id: 16, name: "Agente de Endemias", category: "Online", image: agenteendemias, route: "/agenteendemias" }, 
+  { id: 17, name: "Agente Portuario", category: "Online", image: agenteportuario, route: "/agenteportuario" }, 
+  { id: 18, name: "Auxiliar de Necropsia", category: "Online", image: auxiliarnecropsia, route: "/auxiliarnecropsia" }, 
+  { id: 19, name: "Auxiliar de RH", category: "Online", image: auxiliarrh, route: "/auxiliarderh" }, 
+  { id: 20, name: "Auxiliar de Sala", category: "Online", image: auxiliarsala, route: "/auxiliardesala" }, 
+  { id: 21, name: "Auxiliar de Saude Bucal", category: "Online", image: auxiliarsaudebucal, route: "/auxiliarsaudebucal" }, 
+  { id: 22, name: "Auxiliar de Segurança do Trabalho", category: "Online", image: auxiliarsegtrabalho, route: "/auxiliarsegurancatrabalho" }, 
+  { id: 23, name: "Auxiliar Farmaceutico", category: "Online", image: auxiliarfarmaceutico, route: "/auxiliarfarmaceutico" }, 
+  { id: 24, name: "Auxiliar de Laboratorio", category: "Online", image: auxiliardelaboratorio, route: "/auxiliardelaboratorio" }, 
+  { id: 25, name: "Cuidador de idosos", category: "Online", image: cuidadordeidosos, route: "/cuidadordeidosos" }, 
+  { id: 26, name: "Defesa Civil", category: "Online", image: defesacivil, route: "/defesacivil" }, 
+  { id: 27, name: "Fiscal do Meio Ambiente", category: "Online", image: fiscaldomeioambiente, route: "/fiscaldomeioambiente" }, 
+  { id: 28, name: "Gestao Hospitalar", category: "Online", image: gestaohospitalar, route: "/gestaohospitalar" }, 
+  { id: 29, name: "Guarda Municipal", category: "Online", image: guardamunicipal, route: "/guardamunicipal" }, 
 ];
 
 const CoursesCarousel: React.FC = () => {
@@ -56,7 +93,7 @@ const CoursesCarousel: React.FC = () => {
     <div className="courses-section" id="cursos">
       <h2>Nossos Cursos</h2>
       <div className="categories">
-        {['Todos', 'Negócios', 'Saúde', 'Informática'].map(category => (
+        {['Todos', 'Negócios', 'Saúde', 'Informática', 'Online'].map(category => (
           <button
             key={category}
             className={selectedCategory === category ? 'active' : ''}

@@ -14,7 +14,7 @@ const Auxadm: React.FC = () => {
     salary: "R$ 1.500 - R$ 2.500",
     description: "O Auxiliar Administrativo é responsável por organizar e arquivar documentos, preparar relatórios, realizar atividades administrativas diárias e oferecer suporte a clientes e fornecedores. Suas tarefas incluem gestão de agenda, controle de processos administrativos, e suporte à equipe em diversas funções para garantir o bom funcionamento das operações.",
     jobMarket: "O mercado para Auxiliares Administrativos é amplo e estável, com demanda constante em setores variados, incluindo empresas privadas, órgãos públicos e instituições de ensino. O crescimento do setor de serviços e a necessidade de eficiência administrativa oferecem boas perspectivas de emprego. Profissionais com habilidades administrativas e organizacionais são altamente valorizados.",
-    duration: "18 meses",
+    duration: "8 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
   };

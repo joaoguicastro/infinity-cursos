@@ -13,7 +13,7 @@ const DevGames: React.FC = () => {
     salary: "R$ 7.000 - R$ 12.000",
     description: "O Desenvolvedor de Games é responsável por criar e programar jogos para diversas plataformas, como consoles, PC e dispositivos móveis. Suas tarefas incluem o design de mecânicas de jogo, programação e codificação usando ferramentas como Unity e Unreal Engine, colaboração com artistas e designers, e testes para garantir a qualidade e a experiência de usuário do jogo.",
     jobMarket: "O mercado para Desenvolvedores de Games está em expansão, com alta demanda devido ao crescimento da indústria de jogos e do interesse por jogos digitais. As oportunidades são amplas em empresas de desenvolvimento de jogos, estúdios independentes e setores emergentes como AR e VR. Profissionais com habilidades avançadas em programação e tecnologias emergentes têm boas perspectivas de carreira.",
-    duration: "18 meses",
+    duration: "8 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
   };

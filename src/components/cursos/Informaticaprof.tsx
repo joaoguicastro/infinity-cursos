@@ -13,7 +13,7 @@ const Informaticaprof: React.FC = () => {
     salary: "R$ 3.500 - R$ 7.000",
     description: "O curso de Informática Profissional capacita os alunos para oferecer suporte técnico, desenvolver sistemas de software, gerenciar redes de computadores, trabalhar com bancos de dados e implementar práticas de segurança da informação. O curso aborda diagnóstico e solução de problemas técnicos, desenvolvimento de aplicações, gerenciamento de redes e proteção contra ameaças cibernéticas.",
     jobMarket: "O mercado para profissionais de informática é robusto e em crescimento, com alta demanda por suporte técnico, desenvolvimento de sistemas, gerenciamento de redes e segurança da informação. A digitalização e a necessidade de tecnologia garantem boas perspectivas de emprego e crescimento para profissionais qualificados.",
-    duration: "12 meses",
+    duration: "6 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
   };

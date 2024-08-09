@@ -21,6 +21,23 @@ import Bombeirocivil from './components/cursos/Bombeirocivil';
 import Bombeiromirim from './components/cursos/Bombeiromirim';
 import Atendenteprehospitalar from './components/cursos/Atendenteprehospitalar';
 import Atendentefarmacia from './components/cursos/Atendentefarmacia';
+import AuxVet from './components/cursos/AuxVet';
+import ColetaSangue from './components/cursos/ColetaSangue';
+import AgenteComunitario from './components/cursos/AgenteComunitario';
+import AgenteEndemias from './components/cursos/AgenteEndemias';
+import AgentePortuario from './components/cursos/AgentePortuario';
+import AuxiliarNecropsia from './components/cursos/AuxiliarNecropsia';
+import AuxSala from './components/cursos/AuxSala';
+import SaudeBucao from './components/cursos/SaudeBucao';
+import SegTrab from './components/cursos/SegTrab';
+import AuxFarm from './components/cursos/AuxFarm';
+import CuidadorIdosos from './components/cursos/CuidadorIdosos';
+import DefCivil from './components/cursos/DefCivil';
+import FiscalMeio from './components/cursos/FiscalMeio';
+import GestaoHospital from './components/cursos/GestaoHospital';
+import GuardaMuni from './components/cursos/GuardaMuni';
+import AuxLaboratorio from './components/cursos/AuxLaboratorio';
+import AuxRH from './components/cursos/AuxRH';
 
 const App: React.FC = () => {
   return (
@@ -50,6 +67,23 @@ const App: React.FC = () => {
         <Route path="/bombeiromirim" element={<Bombeiromirim />} />
         <Route path="/bombeirocivil" element={<Bombeirocivil />} />
         <Route path="/auxiliaradministrativo" element={<Auxadm />} />
+        <Route path="/auxiliarveterinario" element={<AuxVet />} />
+        <Route path="/coletadesangue" element={<ColetaSangue />} />
+        <Route path="/agentecomunitario" element={<AgenteComunitario />} />
+        <Route path="/agenteendemias" element={<AgenteEndemias />} />
+        <Route path="/agenteportuario" element={<AgentePortuario />} />
+        <Route path="/auxiliarnecropsia" element={<AuxiliarNecropsia />} />
+        <Route path="/auxiliardesala" element={<AuxSala />} />
+        <Route path="/auxiliarsaudebucal" element={<SaudeBucao />} />
+        <Route path="/auxiliarsegurancatrabalho" element={<SegTrab />} />
+        <Route path="/auxiliarfarmaceutico" element={<AuxFarm />} />
+        <Route path="/cuidadordeidosos" element={<CuidadorIdosos />} />
+        <Route path="/defesacivil" element={<DefCivil />} />
+        <Route path="/fiscaldomeioambiente" element={<FiscalMeio />} />
+        <Route path="/gestaohospitalar" element={<GestaoHospital />} />
+        <Route path="/guardamunicipal" element={<GuardaMuni />} />
+        <Route path="/auxiliardelaboratorio" element={<AuxLaboratorio />} />
+        <Route path="/auxiliarderh" element={<AuxRH />} />
       </Routes>
     </Router>
   );

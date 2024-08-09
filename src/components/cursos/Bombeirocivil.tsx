@@ -13,7 +13,7 @@ const Bombeirocivil: React.FC = () => {
     salary: "R$ 2.500 - R$ 4.000",
     description: "O Bombeiro Civil é responsável por combater incêndios, realizar resgates e prestar primeiros socorros em situações de emergência. Além disso, realiza inspeções de segurança, identifica riscos, e participa de treinamentos para manter habilidades atualizadas. Também cuida da manutenção dos equipamentos de combate a incêndio e resgate.",
     jobMarket: "O mercado para Bombeiros Civis está em crescimento, com alta demanda devido à preocupação com segurança e prevenção de acidentes. A necessidade de manter normas de segurança e estar preparado para emergências oferece boas perspectivas de emprego, especialmente em indústrias, empresas e eventos. Profissionais com treinamento especializado têm melhores oportunidades.",
-    duration: "18 meses",
+    duration: "8 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
   };

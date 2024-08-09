@@ -1,21 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import marketingdigital from '../../assets/cursos/marketingdigital.webp';
+import auxiliarfarm from '../../assets/cursos/auxiliarfarmaceutico.webp';
 
-const MarketingDigital: React.FC = () => {
+const AuxFarm: React.FC = () => {
 
   // Informações do curso
   const courseInfo = {
-    title: "Marketing Digital",
-    category: "Negócios",
-    salary: "R$ 5.000 - R$ 10.000",
-    description: "O curso de Marketing Digital capacita os alunos para planejar, criar e gerenciar campanhas de marketing digital em diversos canais. Os alunos aprendem a implementar estratégias de SEO e SEM, analisar métricas de desempenho, criar e gerenciar conteúdo para redes sociais, e desenvolver estratégias de marca para fortalecer a presença digital.",
-    jobMarket: "O mercado para profissionais de Marketing Digital está em expansão, com alta demanda por especialistas em SEO, SEM, análise de dados e gerenciamento de redes sociais. A importância crescente da presença online e a evolução das plataformas digitais oferecem boas perspectivas de emprego e oportunidades de crescimento.",
-    duration: "6 meses",
+    title: "Auxiliar de Farmácia",
+    category: "Saúde",
+    salary: "R$ 1.800 - R$ 3.500",
+    description: "O curso de Auxiliar de Farmácia capacita os alunos para receber e atender prescrições médicas, preparar e dispensar medicamentos, fornecer informações ao cliente sobre o uso de produtos farmacêuticos, gerenciar o estoque, manter a organização e limpeza do ambiente de trabalho e garantir a conformidade com regulamentações de saúde.",
+    jobMarket: "O mercado para Auxiliares de Farmácia é estável, com demanda constante em farmácias, drogarias e hospitais. A crescente demanda por medicamentos e produtos farmacêuticos contribui para boas perspectivas de emprego e oportunidades de crescimento na área de saúde.",
+    duration: "12 meses",
     certification: "Técnico",
-    teachingMode: "Presencial"
+    teachingMode: "Online"
   };
 
   return (
@@ -24,7 +25,7 @@ const MarketingDigital: React.FC = () => {
       <div className="course-details-custom">
         <div className="course-overview-custom">
           <div className="image-container-custom">
-            <img src={marketingdigital} alt="Informática Profissional" className="course-image-custom" />
+            <img src={auxiliarfarm} alt="Informática Profissional" className="course-image-custom" />
           </div>
           <div className="card-custom">
             <div className="tools-custom">
@@ -73,4 +74,4 @@ const MarketingDigital: React.FC = () => {
   );
 };
 
-export default MarketingDigital;
+export default AuxFarm;

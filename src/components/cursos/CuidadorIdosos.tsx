@@ -1,21 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import marketingdigital from '../../assets/cursos/marketingdigital.webp';
+import cuidadordeidosos from '../../assets/cursos/cuidadordeidosos.webp';
 
-const MarketingDigital: React.FC = () => {
+const CuidadorIdosos: React.FC = () => {
 
   // Informações do curso
   const courseInfo = {
-    title: "Marketing Digital",
-    category: "Negócios",
-    salary: "R$ 5.000 - R$ 10.000",
-    description: "O curso de Marketing Digital capacita os alunos para planejar, criar e gerenciar campanhas de marketing digital em diversos canais. Os alunos aprendem a implementar estratégias de SEO e SEM, analisar métricas de desempenho, criar e gerenciar conteúdo para redes sociais, e desenvolver estratégias de marca para fortalecer a presença digital.",
-    jobMarket: "O mercado para profissionais de Marketing Digital está em expansão, com alta demanda por especialistas em SEO, SEM, análise de dados e gerenciamento de redes sociais. A importância crescente da presença online e a evolução das plataformas digitais oferecem boas perspectivas de emprego e oportunidades de crescimento.",
-    duration: "6 meses",
+    title: "Cuidador de Idosos",
+    category: "Saúde",
+    salary: "R$ 2.500 - R$ 4.500",
+    description: "O curso de Cuidador de Idosos capacita os alunos para auxiliar os idosos nas atividades diárias, monitorar a saúde e bem-estar, oferecer apoio emocional, garantir um ambiente seguro e confortável, e colaborar com familiares e profissionais de saúde na elaboração de planos de cuidados.",
+    jobMarket: "O mercado para Cuidadores de Idosos é crescente, com demanda crescente devido ao aumento da população idosa. As oportunidades existem em lares de idosos, serviços domiciliares e hospitais, oferecendo boas perspectivas de emprego e oportunidades de crescimento na área de cuidados com a terceira idade.",
+    duration: "12 meses",
     certification: "Técnico",
-    teachingMode: "Presencial"
+    teachingMode: "Online"
   };
 
   return (
@@ -24,7 +25,7 @@ const MarketingDigital: React.FC = () => {
       <div className="course-details-custom">
         <div className="course-overview-custom">
           <div className="image-container-custom">
-            <img src={marketingdigital} alt="Informática Profissional" className="course-image-custom" />
+            <img src={cuidadordeidosos} alt="Informática Profissional" className="course-image-custom" />
           </div>
           <div className="card-custom">
             <div className="tools-custom">
@@ -73,4 +74,4 @@ const MarketingDigital: React.FC = () => {
   );
 };
 
-export default MarketingDigital;
+export default CuidadorIdosos;

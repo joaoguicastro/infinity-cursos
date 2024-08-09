@@ -14,7 +14,7 @@ const Atendentefarmacia: React.FC = () => {
     salary: "R$ 1.500 - R$ 2.500",
     description: "O Atendente de Farmácia é responsável por dispensar medicamentos, orientar os pacientes sobre o uso correto dos produtos e oferecer suporte na organização e manutenção do estoque. Entre suas responsabilidades estão o atendimento ao cliente, o gerenciamento do estoque de medicamentos e produtos, o registro de vendas e o apoio à equipe de farmacêuticos e outros profissionais da saúde.",
     jobMarket: "O mercado para Atendentes de Farmácia está em expansão no Brasil, com uma demanda crescente devido ao aumento dos serviços de saúde e à necessidade de profissionais qualificados. O envelhecimento da população e a ampliação do acesso a medicamentos contribuem para o crescimento desse setor, oferecendo boas perspectivas de emprego em farmácias, drogarias, hospitais e clínicas.",
-    duration: "18 meses",
+    duration: "8 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
   };

@@ -1,21 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import marketingdigital from '../../assets/cursos/marketingdigital.webp';
+import auxrh from '../../assets/cursos/auxiliarrh.webp';
 
-const MarketingDigital: React.FC = () => {
+const AuxRH: React.FC = () => {
 
   // Informações do curso
   const courseInfo = {
-    title: "Marketing Digital",
-    category: "Negócios",
-    salary: "R$ 5.000 - R$ 10.000",
-    description: "O curso de Marketing Digital capacita os alunos para planejar, criar e gerenciar campanhas de marketing digital em diversos canais. Os alunos aprendem a implementar estratégias de SEO e SEM, analisar métricas de desempenho, criar e gerenciar conteúdo para redes sociais, e desenvolver estratégias de marca para fortalecer a presença digital.",
-    jobMarket: "O mercado para profissionais de Marketing Digital está em expansão, com alta demanda por especialistas em SEO, SEM, análise de dados e gerenciamento de redes sociais. A importância crescente da presença online e a evolução das plataformas digitais oferecem boas perspectivas de emprego e oportunidades de crescimento.",
-    duration: "6 meses",
+    title: "Auxiliar de Recursos Humanos",
+    category: "Recursos Humanos",
+    salary: "R$ 3.000 - R$ 5.500",
+    description: "O curso de Auxiliar de Recursos Humanos capacita os alunos para auxiliar no recrutamento e seleção de candidatos, administrar pessoal, apoiar treinamentos e desenvolvimento, atuar como ponto de contato para colaboradores e manter a documentação e arquivamento de registros.",
+    jobMarket: "O mercado para Auxiliares de Recursos Humanos é promissor e estável, com demanda em empresas de diversos tamanhos e setores. O papel é fundamental para uma gestão eficaz de recursos humanos e oferece boas perspectivas de emprego e desenvolvimento na área.",
+    duration: "12 meses",
     certification: "Técnico",
-    teachingMode: "Presencial"
+    teachingMode: "Online"
   };
 
   return (
@@ -24,7 +25,7 @@ const MarketingDigital: React.FC = () => {
       <div className="course-details-custom">
         <div className="course-overview-custom">
           <div className="image-container-custom">
-            <img src={marketingdigital} alt="Informática Profissional" className="course-image-custom" />
+            <img src={auxrh} alt="Informática Profissional" className="course-image-custom" />
           </div>
           <div className="card-custom">
             <div className="tools-custom">
@@ -73,4 +74,4 @@ const MarketingDigital: React.FC = () => {
   );
 };
 
-export default MarketingDigital;
+export default AuxRH;

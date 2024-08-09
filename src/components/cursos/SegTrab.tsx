@@ -1,21 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import marketingdigital from '../../assets/cursos/marketingdigital.webp';
+import segtrab from '../../assets/cursos/auxiliarseguranca.webp';
 
-const MarketingDigital: React.FC = () => {
+const SegTrab: React.FC = () => {
 
   // Informações do curso
   const courseInfo = {
-    title: "Marketing Digital",
-    category: "Negócios",
-    salary: "R$ 5.000 - R$ 10.000",
-    description: "O curso de Marketing Digital capacita os alunos para planejar, criar e gerenciar campanhas de marketing digital em diversos canais. Os alunos aprendem a implementar estratégias de SEO e SEM, analisar métricas de desempenho, criar e gerenciar conteúdo para redes sociais, e desenvolver estratégias de marca para fortalecer a presença digital.",
-    jobMarket: "O mercado para profissionais de Marketing Digital está em expansão, com alta demanda por especialistas em SEO, SEM, análise de dados e gerenciamento de redes sociais. A importância crescente da presença online e a evolução das plataformas digitais oferecem boas perspectivas de emprego e oportunidades de crescimento.",
-    duration: "6 meses",
+    title: "Auxiliar de Segurança do Trabalho",
+    category: "Segurança e Saúde Ocupacional",
+    salary: "R$ 3.000 - R$ 6.000",
+    description: "O curso de Auxiliar de Segurança do Trabalho capacita os alunos para implementar e monitorar normas de segurança, avaliar riscos, promover treinamentos, conduzir inspeções e auditorias, e manter a documentação relacionada à segurança do trabalho.",
+    jobMarket: "O mercado para Auxiliares de Segurança do Trabalho é estável e com demanda constante, com oportunidades em indústrias, construção civil, empresas de serviços e instituições públicas. A necessidade de cumprimento das normas de segurança e saúde ocupacional oferece boas perspectivas de emprego e oportunidades de crescimento.",
+    duration: "12 meses",
     certification: "Técnico",
-    teachingMode: "Presencial"
+    teachingMode: "Online"
   };
 
   return (
@@ -24,7 +25,7 @@ const MarketingDigital: React.FC = () => {
       <div className="course-details-custom">
         <div className="course-overview-custom">
           <div className="image-container-custom">
-            <img src={marketingdigital} alt="Informática Profissional" className="course-image-custom" />
+            <img src={segtrab} alt="Informática Profissional" className="course-image-custom" />
           </div>
           <div className="card-custom">
             <div className="tools-custom">
@@ -73,4 +74,4 @@ const MarketingDigital: React.FC = () => {
   );
 };
 
-export default MarketingDigital;
+export default SegTrab;

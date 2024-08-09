@@ -1,21 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import marketingdigital from '../../assets/cursos/marketingdigital.webp';
+import coletasangue from '../../assets/cursos/coletasangue.webp';
 
-const MarketingDigital: React.FC = () => {
+const ColetaSangue: React.FC = () => {
 
   // Informações do curso
   const courseInfo = {
-    title: "Marketing Digital",
-    category: "Negócios",
-    salary: "R$ 5.000 - R$ 10.000",
-    description: "O curso de Marketing Digital capacita os alunos para planejar, criar e gerenciar campanhas de marketing digital em diversos canais. Os alunos aprendem a implementar estratégias de SEO e SEM, analisar métricas de desempenho, criar e gerenciar conteúdo para redes sociais, e desenvolver estratégias de marca para fortalecer a presença digital.",
-    jobMarket: "O mercado para profissionais de Marketing Digital está em expansão, com alta demanda por especialistas em SEO, SEM, análise de dados e gerenciamento de redes sociais. A importância crescente da presença online e a evolução das plataformas digitais oferecem boas perspectivas de emprego e oportunidades de crescimento.",
-    duration: "6 meses",
+    title: "Coleta de Sangue",
+    category: "Saúde",
+    salary: "R$ 2.500 - R$ 4.500",
+    description: "O curso de Coleta de Sangue capacita os alunos para realizar a coleta de amostras de sangue, preparar e manusear amostras para análise laboratorial, fornecer cuidados aos pacientes, seguir procedimentos de controle de qualidade e manter registros precisos das coletas.",
+    jobMarket: "O mercado para profissionais especializados em Coleta de Sangue é estável, com demanda contínua em hospitais, laboratórios e centros de diagnóstico. A necessidade crescente de exames laboratoriais e diagnósticos precisos oferece boas perspectivas de emprego e oportunidades de crescimento.",
+    duration: "8 meses",
     certification: "Técnico",
-    teachingMode: "Presencial"
+    teachingMode: "Online"
   };
 
   return (
@@ -24,7 +25,7 @@ const MarketingDigital: React.FC = () => {
       <div className="course-details-custom">
         <div className="course-overview-custom">
           <div className="image-container-custom">
-            <img src={marketingdigital} alt="Informática Profissional" className="course-image-custom" />
+            <img src={coletasangue} alt="Informática Profissional" className="course-image-custom" />
           </div>
           <div className="card-custom">
             <div className="tools-custom">
@@ -73,4 +74,4 @@ const MarketingDigital: React.FC = () => {
   );
 };
 
-export default MarketingDigital;
+export default ColetaSangue;
