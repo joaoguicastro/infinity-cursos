@@ -116,10 +116,20 @@
   .logos-container {
       position: relative;
       bottom: auto;
+      margin-right: 15px;
   }
 
   .mini-logo {
       width: 10%;
       margin: 5px;
+  }
+
+  /* Mostrar apenas os primeiros 10 logos em dispositivos móveis */
+  .mini-logo {
+      display: none;
+  }
+
+  .mini-logo:nth-child(-n+8) {
+      display: block;
   }
 }
