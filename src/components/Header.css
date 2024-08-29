@@ -100,27 +100,7 @@
 
 /* Estilos específicos para dispositivos móveis */
 @media (max-width: 768px) {
-  .nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Ajuste conforme necessário */
-    right: 20px;
-    background-color: gray;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
   .menu-button {
-    display: block;
-  }
-
-  .nav ul li {
-    margin: 10px 0;
-  }
-
-  .nav.open ul {
-    display: flex;
+    display: none;
   }
 }
