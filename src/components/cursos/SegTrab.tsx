@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import segtrab from '../../assets/cursos/auxiliarseguranca.webp';
+import segtrab from '../../assets/cursos/auxiliarseguranca.jpeg';
 
 const SegTrab: React.FC = () => {
 
@@ -25,7 +24,7 @@ const SegTrab: React.FC = () => {
       <div className="course-details-custom">
         <div className="course-overview-custom">
           <div className="image-container-custom">
-            <img src={segtrab} alt="Informática Profissional" className="course-image-custom" />
+            <img src={segtrab} alt="Auxiliar de Segurança do Trabalho" className="course-image-custom" />
           </div>
           <div className="card-custom">
             <div className="tools-custom">

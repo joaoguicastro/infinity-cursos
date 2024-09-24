@@ -14,7 +14,7 @@ const JoinSection: React.FC = () => {
           <h2>Transformando<br />ideias em realidade</h2>
         </div>
         <div className="right-content">
-          <a href="https://w.app/infinitycursos">
+          <a href="https://api.whatsapp.com/send?phone=5585991154215&text=Oi,%20estou%20precisando%20de%20mais%20informaçoes">
             <button className="join-button">
               Matricule-se já
             </button>

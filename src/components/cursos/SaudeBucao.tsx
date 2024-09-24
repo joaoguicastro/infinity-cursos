@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import saudebucao from '../../assets/cursos/auxiliarsaudebucal.webp';
+import saudebucao from '../../assets/cursos/saudebucao.webp';
 
 const SaudeBucao: React.FC = () => {
 
@@ -23,10 +22,7 @@ const SaudeBucao: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={saudebucao} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${saudebucao})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">

@@ -2,17 +2,17 @@ import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import bombeiromirim from '../../assets/cursos/bombeiromirim.webp';
+import bombeiromirim from '../../assets/cursos/bombeiromirim.avif';
 
 const Bombeiromirim: React.FC = () => {
 
   // Informações do curso
   const courseInfo = {
-    title: "Bombeiro Mirim",
+    title: "Herói Mirim",
     category: "Educação",
     salary: "Conhecimento e Disciplina",
-    description: "O programa Bombeiro Mirim oferece aos jovens educação sobre segurança contra incêndios, primeiros socorros e práticas de prevenção. Ele promove o desenvolvimento de habilidades como trabalho em equipe, liderança e responsabilidade, além de proporcionar treinamento prático e fomentar a disciplina e a ética.",
-    jobMarket: "O programa Bombeiro Mirim contribui para o desenvolvimento pessoal e social dos jovens, preparando-os para futuras oportunidades e fomentando habilidades valiosas. Embora não ofereça remuneração direta, pode abrir portas para oportunidades em áreas de segurança e emergências e ajudar a formar cidadãos mais conscientes e responsáveis.",
+    description: "O programa Herói Mirim oferece aos jovens educação sobre segurança contra incêndios, primeiros socorros e práticas de prevenção. Ele promove o desenvolvimento de habilidades como trabalho em equipe, liderança e responsabilidade, além de proporcionar treinamento prático e fomentar a disciplina e a ética.",
+    jobMarket: "O programa Herói Mirim contribui para o desenvolvimento pessoal e social dos jovens, preparando-os para futuras oportunidades e fomentando habilidades valiosas. Embora não ofereça remuneração direta, pode abrir portas para oportunidades em áreas de segurança e emergências e ajudar a formar cidadãos mais conscientes e responsáveis.",
     duration: "Variável",
     certification: "Participação",
     teachingMode: "Presencial"
@@ -22,10 +22,7 @@ const Bombeiromirim: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={bombeiromirim} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${bombeiromirim})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">
@@ -41,7 +38,7 @@ const Bombeiromirim: React.FC = () => {
             <div className="card-content-custom">
               <h1>{courseInfo.title}</h1>
               <span className="category-custom">{courseInfo.category}</span>
-              <span className="salary-custom">Média salarial nacional {courseInfo.salary}</span>
+              <span className="salary-custom">{courseInfo.salary}</span>
             </div>
           </div>
         </div>

@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import agentecomunitario from '../../assets/cursos/agentecomunitario.webp';
+import agentecomunitario from '../../assets/cursos/agentecomunitario.jpg';
 
 const AgenteComunitario: React.FC = () => {
 
@@ -23,10 +22,8 @@ const AgenteComunitario: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={agentecomunitario} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        {/* Seção com imagem de fundo dinâmica */}
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${agentecomunitario})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">

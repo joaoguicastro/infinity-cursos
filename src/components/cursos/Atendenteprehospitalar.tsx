@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import atendenteprehospitalar from '../../assets/cursos/atendenteprehospitalar.webp';
+import atendenteprehospitalar from '../../assets/cursos/atendenteprehospitalar.png';
 
 const Atendenteprehospitalar: React.FC = () => {
 
@@ -16,17 +16,14 @@ const Atendenteprehospitalar: React.FC = () => {
     duration: "8 meses",
     certification: "Técnico",
     teachingMode: "Presencial"
-
   };
 
   return (
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={atendenteprehospitalar} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        {/* Seção com imagem de fundo dinâmica */}
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${atendenteprehospitalar})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">

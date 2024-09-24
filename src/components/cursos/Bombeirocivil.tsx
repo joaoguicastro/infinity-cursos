@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import bombeirocivil from '../../assets/cursos/bombeirocivil.webp';
+import bombeirocivil from '../../assets/cursos/bombeirocivil.png';
 
 const Bombeirocivil: React.FC = () => {
 
@@ -22,10 +22,7 @@ const Bombeirocivil: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={bombeirocivil} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${bombeirocivil})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">

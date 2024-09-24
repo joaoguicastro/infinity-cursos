@@ -30,7 +30,6 @@ import AuxiliarNecropsia from './components/cursos/AuxiliarNecropsia';
 import AuxSala from './components/cursos/AuxSala';
 import SaudeBucao from './components/cursos/SaudeBucao';
 import SegTrab from './components/cursos/SegTrab';
-import AuxFarm from './components/cursos/AuxFarm';
 import CuidadorIdosos from './components/cursos/CuidadorIdosos';
 import DefCivil from './components/cursos/DefCivil';
 import FiscalMeio from './components/cursos/FiscalMeio';
@@ -38,6 +37,8 @@ import GestaoHospital from './components/cursos/GestaoHospital';
 import GuardaMuni from './components/cursos/GuardaMuni';
 import AuxLaboratorio from './components/cursos/AuxLaboratorio';
 import AuxRH from './components/cursos/AuxRH';
+import AdminLogin from './components/AdminLogin';
+import Admin from './components/Admin';
 
 const App: React.FC = () => {
   return (
@@ -55,6 +56,8 @@ const App: React.FC = () => {
             <WhatsAppButton />
           </>
         } />
+        <Route path='/login' element={<AdminLogin />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="/informaticaprof" element={<Informaticaprof />} />
         <Route path="/desenvolvimentofullstack" element={<DevFull />} />
         <Route path="/desenvolvimentogames" element={<DevGames />} />
@@ -76,7 +79,6 @@ const App: React.FC = () => {
         <Route path="/auxiliardesala" element={<AuxSala />} />
         <Route path="/auxiliarsaudebucal" element={<SaudeBucao />} />
         <Route path="/auxiliarsegurancatrabalho" element={<SegTrab />} />
-        <Route path="/auxiliarfarmaceutico" element={<AuxFarm />} />
         <Route path="/cuidadordeidosos" element={<CuidadorIdosos />} />
         <Route path="/defesacivil" element={<DefCivil />} />
         <Route path="/fiscaldomeioambiente" element={<FiscalMeio />} />

@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import cuidadordeidosos from '../../assets/cursos/cuidadordeidosos.webp';
+import cuidadordeidosos from '../../assets/cursos/cuidadordeidosos.png';
 
 const CuidadorIdosos: React.FC = () => {
 
@@ -23,10 +23,7 @@ const CuidadorIdosos: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={cuidadordeidosos} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${cuidadordeidosos})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">

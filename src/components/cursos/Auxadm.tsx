@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import auxadm from '../../assets/cursos/auxadm.webp';
+import auxadm from '../../assets/cursos/auxadm.png';
 
 const Auxadm: React.FC = () => {
 
@@ -23,10 +23,8 @@ const Auxadm: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={auxadm} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        {/* Imagem de fundo dinâmica */}
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${auxadm})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">

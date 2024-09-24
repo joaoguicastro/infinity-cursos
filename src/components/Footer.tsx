@@ -13,15 +13,15 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-section">
           <h3>Contato</h3>
-          <p>(85) 9 9120-7549</p>
+          <p>(85) 9 99115-4215</p>
           <p>Shopping Pitaguary, Subsolo S2 e S3</p>
           <p>Rua Joao de Alencar, 113 – Centro, Maracanau – CE, 61900-150</p>
           <p>redeinfinitycursos@gmail.com</p>
           <div className="social-icons">
             <a href="https://www.instagram.com/infinitycursosofc/" className='link'> <FaInstagram /> </a>
-            <a href="https://wa.me/5591207549" className='link'><FaWhatsapp /></a>
+            <a href="https://api.whatsapp.com/send?phone=5585991154215&text=Oi,%20estou%20precisando%20de%20mais%20informaçoes" className='link'><FaWhatsapp /></a>
             <a href="mailto:redeinfinitycursos@gmail.com"><FaEnvelope /> </a>
-            <a href="https://wa.me/5591207549"><FaPeopleArrows/> </a>
+            <a href="https://api.whatsapp.com/send?phone=5585991154215&text=Oi,%20estou%20precisando%20de%20mais%20informaçoes"><FaPeopleArrows/> </a>
           </div>
         </div>
         <div className="footer-section">

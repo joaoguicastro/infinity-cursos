@@ -1,39 +1,46 @@
 /* Estilos para desktop (padrão) */
 .course-details-custom {
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Seção de destaque */
 .course-overview-custom {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   margin-bottom: 20px;
   margin-top: 80px; /* Espaço entre o header e a imagem */
+  background-size: cover;
+  background-position: center center;
+  height: 50vh; /* A altura cobre metade da tela */
+  color: white;
+  border-radius: 8px;
 }
 
+/* Para garantir que a imagem do curso seja aplicada dinamicamente */
 .image-container-custom {
-  flex: 1;
+  display: none; /* Remove a imagem separada */
 }
 
-.course-image-custom {
-  width: 55%; /* Ajusta a largura da imagem para ocupar menos espaço */
-  display: block;
-}
-
+/* Estilos para o conteúdo do card */
 .card-custom {
-  background-color: #011522;
+  flex: 1;
+  background-color: rgba(1, 21, 34, 0.8); /* Fundo semi-transparente */
   border-radius: 8px;
   color: white;
   padding: 20px;
-  margin-top: 80px; /* Espaço entre o header e o card */
-  max-width: 400px; /* Limitar a largura máxima do card */
-  margin-right: 600px;
-  height: auto; /* Remove a altura fixa */
-  min-height: 300px; /* Define uma altura mínima */
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
 }
 
 .tools-custom {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 9px;
 }
 
@@ -63,22 +70,36 @@
 }
 
 .card-content-custom h1 {
-  font-size: 24px;
+  font-size: 32px; /* Aumenta o tamanho do título */
   margin: 0;
-  word-spacing: 0.2em; /* Aumenta o espaçamento entre as palavras */
+  word-spacing: 0.1em;
+  font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
 }
 
 .card-content-custom .category-custom,
 .card-content-custom .salary-custom {
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 10px;
+  font-family: 'Roboto', sans-serif; /* Fonte mais leve para o conteúdo */
 }
 
 .course-description-custom,
 .course-job-market-custom,
 .course-details-info-custom {
-  margin: 20px 0;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.course-description-custom h2, 
+.course-job-market-custom h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #011522;
 }
 
 .course-details-info-custom {
@@ -87,19 +108,47 @@
 }
 
 .detail-custom {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+.detail-custom:hover {
+  transform: scale(1.05); /* Efeito de "zoom" suave ao passar o mouse */
 }
 
 .detail-custom span {
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #011522;
 }
 
-/* Estilos específicos para dispositivos móveis */
+.detail-custom p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Botões com efeito hover */
+.form-button-renamed {
+  background-color: #011522;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-button-renamed:hover {
+  background-color: #ffea00; /* Muda a cor ao passar o mouse */
+}
+
+/* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
   .course-details-custom {
     padding: 10px;
@@ -110,38 +159,11 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 10px;
-  }
-
-  .image-container-custom,
-  .card-custom {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .course-image-custom {
-    width: 80%; /* Diminui a largura da imagem em dispositivos móveis */
+    height: 30vh; /* Reduz a altura da seção de destaque em telas menores */
   }
 
   .card-custom {
-    margin: 20px 0;
-    max-width: none;
-    margin-left: 0;
-    min-height: 300px; /* Define uma altura mínima */
-  }
-
-  .card-content-custom h1 {
-    font-size: 20px;
-    word-spacing: 0.2em; /* Aumenta o espaçamento entre as palavras */
-  }
-
-  .card-content-custom .category-custom,
-  .card-content-custom .salary-custom {
-    font-size: 14px;
-    word-spacing: 0.2em; /* Aumenta o espaçamento entre as palavras */
-  }
-
-  .tools-custom {
-    justify-content: center;
+    width: 90%; /* Ajusta o card para ocupar quase toda a largura */
   }
 
   .course-description-custom,

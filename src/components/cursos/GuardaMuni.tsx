@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import guardamunicipal from '../../assets/cursos/guardamunicipal.webp';
+import guardamunicipal from '../../assets/cursos/guardamunicipal.jpg';
 
 const GuardaMuni: React.FC = () => {
 
@@ -23,10 +23,7 @@ const GuardaMuni: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={guardamunicipal} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${guardamunicipal})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">

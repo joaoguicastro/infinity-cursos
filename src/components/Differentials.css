@@ -1,5 +1,5 @@
-/* Estilos para desktop (padrão) */
-.differentials {
+/* Estilos para a seção de diferenciais */
+.custom-differentials {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -9,35 +9,38 @@
   min-height: 600px;
 }
 
-.differentials-content {
+.custom-differentials-content {
   flex: 1;
   max-width: 40%;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 0; /* Alinhar mais à esquerda */
 }
 
-.differentials-content h2 {
+.custom-differentials-content h2 {
   font-size: 3rem;
   margin-bottom: 20px;
+  text-align: left;
 }
 
-.differentials-content p {
+.custom-differentials-content p {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  text-align: left;
 }
 
-.differentials-examples {
+.custom-differentials-examples {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.card, .card2 {
+.custom-card, .custom-card2 {
   width: 100%;
-  max-width: 250px;
+  max-width: 280px; /* Ajustar a largura para torná-las mais quadradas */
   background-color: #1a1a1a;
   transition: all 0.2s;
   border-radius: 20px;
@@ -48,85 +51,80 @@
   text-align: center;
   color: #ffffff;
   padding: 20px;
-  height: auto;
-  min-height: 320px; /* Define uma altura mínima para garantir consistência */
+  height: 280px; /* Definir uma altura igual para tornar quadrado */
 }
 
-.card2 {
-  background-color: #1a1a1a;
-}
-
-.card2:hover {
+.custom-card2:hover {
   transform: scale(0.98);
 }
 
-.card:hover {
+.custom-card:hover {
   box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
 }
 
-.differential-icon {
+.custom-differential-icon {
   font-size: 2.5rem;
   color: #73b809;
   margin-bottom: 10px;
 }
 
-.card2 h3 {
+.custom-card2 h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
 
-.card2 p {
+.custom-card2 p {
   font-size: 1.2rem;
 }
 
 /* Estilos específicos para dispositivos móveis */
 @media (max-width: 768px) {
-  .differentials {
+  .custom-differentials {
     flex-direction: column;
     align-items: center;
     padding: 20px;
     min-height: auto;
   }
 
-  .differentials-content {
+  .custom-differentials-content {
     max-width: 100%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
   }
 
-  .differentials-content h2 {
+  .custom-differentials-content h2 {
     font-size: 2rem;
   }
 
-  .differentials-content p {
+  .custom-differentials-content p {
     font-size: 1.2rem;
   }
 
-  .differentials-examples {
+  .custom-differentials-examples {
     grid-template-columns: 1fr;
     gap: 10px;
     margin-right: 30px;
   }
 
-  .card, .card2 {
+  .custom-card, .custom-card2 {
     max-width: 100%;
     height: auto;
-    min-height: 300px; /* Define uma altura mínima para garantir consistência */
-    padding: 15px; /* Ajuste do padding para melhor visualização em telas menores */
+    min-height: 300px;
+    padding: 15px;
   }
 
-  .card2 h3 {
+  .custom-card2 h3 {
     font-size: 1.5rem;
-    margin-bottom: 8px; /* Reduz a margem inferior para melhor ajuste em telas menores */
+    margin-bottom: 8px;
   }
 
-  .card2 p {
+  .custom-card2 p {
     font-size: 1rem;
-    line-height: 1.4; /* Ajuste da altura da linha para melhorar a legibilidade */
+    line-height: 1.4;
   }
 
-  .differential-icon {
-    font-size: 2rem; /* Reduz o tamanho do ícone para melhor ajuste em telas menores */
+  .custom-differential-icon {
+    font-size: 2rem;
     margin-bottom: 8px;
   }
 }

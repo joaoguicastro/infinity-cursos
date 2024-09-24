@@ -25,9 +25,10 @@ const Header: React.FC = () => {
           <ul>
             <li><a href="#courses" onClick={(e) => scrollToSection(e, 'cursos')}>Cursos</a></li>
             <li><a href="#differentials" onClick={(e) => scrollToSection(e, 'diferencial')}>Sobre Nós</a></li>
-            <li><a href="https://w.app/infinitycursos">Contato</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5585991154215&text=Oi,%20estou%20precisando%20de%20mais%20informaçoes">Contato</a></li>
             <li><a href="#student-area">Área do aluno</a></li>
-            <li><a href="https://w.app/infinitycursos" onClick={(e) => scrollToSection(e, 'formulario')}>Seja nosso aluno</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5585991154215&text=Oi,%20estou%20precisando%20de%20mais%20informaçoes">Seja nosso aluno</a></li>
+            <li><a href="/login">Área Restrita</a></li>
           </ul>
         )}
         <button className="menu-button btn" onClick={toggleMenu}>

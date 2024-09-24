@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import agenteportuario from '../../assets/cursos/agenteportuario.webp';
+import agenteportuario from '../../assets/cursos/agenteportuario.jpg';
 
 const AgentePortuario: React.FC = () => {
 
@@ -23,10 +23,8 @@ const AgentePortuario: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={agenteportuario} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        {/* Seção com imagem de fundo dinâmica */}
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${agenteportuario})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">

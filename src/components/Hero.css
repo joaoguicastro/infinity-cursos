@@ -1,82 +1,136 @@
-/* src/components/Hero.css */
-.hero {
+/* src/components/HeroRenamed.css */
+.hero-renamed {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: transparent;
-  text-align: center;
+  padding: 0 20px;
 }
 
-.hero-content {
+.hero-content-renamed {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
   align-items: center;
+  flex-wrap: wrap; /* Adiciona flexibilidade para telas menores */
 }
 
-.hero-logo {
+.hero-logo-renamed {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo-renamed img {
+  max-width: 75%;
+  height: auto;
+}
+
+.form-container-renamed {
+  flex: 1;
+  background: linear-gradient(135deg, #4caf50, #73b809);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 250px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 1024px) {
+  .form-container-renamed {
+    margin-left: 50px; /* Reduzir a margem em telas menores */
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content-renamed {
+    flex-direction: column; /* Coloca o conteúdo em coluna */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  .hero-logo-renamed {
+    margin-bottom: 20px; /* Adiciona espaçamento entre logo e formulário */
+  }
+
+  .form-container-renamed {
+    margin-left: 0; /* Remove a margem lateral */
+    max-width: 100%; /* Formulário ocupa 100% da largura disponível */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-logo-renamed img {
+    max-width: 60%; /* Reduz a logo em telas muito pequenas */
+  }
+
+  .form-container-renamed {
+    padding: 10px;
+  }
+
+  .form-input-renamed, .form-button-renamed {
+    max-width: 100%; /* Faz com que os inputs e o botão ocupem toda a largura disponível */
+  }
+}
+
+/* Estilos adicionais */
+#texto-h2 {
+  text-align: center;
+  color: white;
   margin-bottom: 20px;
 }
 
-.hero-logo img {
-  max-width: 300px;
+.form-renamed {
+  display: flex;
+  flex-direction: column;
 }
 
-.hero-button {
-  position: relative;
+.form-input-renamed {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 350px; /* Largura máxima dos campos de input */
+  margin-left: auto;
+  margin-right: auto;
+  transition: border-color 0.3s ease;
+}
+
+.form-input-renamed:focus {
+  border-color: #fff200; /* Destaque amarelo ao focar no campo */
+  outline: none;
+}
+
+.form-button-renamed {
+  background-color: black;
+  color: white;
   padding: 10px 20px;
-  border-radius: 7px;
-  border: 1px solid  black;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  background: transparent;
-  color: black;
-  overflow: hidden;
-  box-shadow: 0 0 0 0 transparent;
-  transition: all 0.2s ease-in;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s ease;
 }
 
-.hero-button:hover {
-  background: #73b809;
-  box-shadow: 0 0 30px 5px #73b809;
-  transition: all 0.2s ease-out;
+.form-button-renamed:hover {
+  background-color: #ffea00;
 }
 
-.hero-button:hover::before {
-  animation: sh02 0.5s 0s linear;
-}
-
-.hero-button::before {
-  content: '';
-  display: block;
-  width: 0px;
-  height: 86%;
-  position: absolute;
-  top: 7%;
-  left: 0%;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
-  transform: skewX(-20deg);
-}
-
-@keyframes sh02 {
-  from {
-    opacity: 0;
-    left: 0%;
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    left: 100%;
-  }
-}
-
-.hero-button:active {
-  box-shadow: 0 0 0 0 transparent;
-  transition: box-shadow 0.2s ease-in;
+/* Mensagens de erro */
+.error-message-renamed {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }

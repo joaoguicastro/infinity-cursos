@@ -22,10 +22,7 @@ const DevGames: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={devgames} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${devgames})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">

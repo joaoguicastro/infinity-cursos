@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import designergraf from '../../assets/cursos/designgrafico.webp';
+import designergraf from '../../assets/cursos/designgrafico.png';
 
 const DesignerGrafico: React.FC = () => {
 
@@ -22,10 +22,7 @@ const DesignerGrafico: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={designergraf} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${designergraf})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">

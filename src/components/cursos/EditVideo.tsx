@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import editvideo from '../../assets/cursos/edicaodevideo.webp';
+import editvideo from '../../assets/cursos/edicaodevideo.jpg';
 
 const EditVideo: React.FC = () => {
   // Informações do curso
@@ -21,10 +21,7 @@ const EditVideo: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={editvideo} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${editvideo})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">

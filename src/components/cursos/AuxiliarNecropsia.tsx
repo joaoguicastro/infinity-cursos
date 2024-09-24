@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../Header';
 import WhatsAppButton from '../WhatsAppButton';
 import './Cursos.css';
-import auxiliarnecropsia from '../../assets/cursos/auxiliarnecropsia.webp';
+import auxiliarnecropsia from '../../assets/cursos/auxiliarnecropsia.jpg';
 
 const AuxiliarNecropsia: React.FC = () => {
 
@@ -23,10 +23,8 @@ const AuxiliarNecropsia: React.FC = () => {
     <div>
       <Header />
       <div className="course-details-custom">
-        <div className="course-overview-custom">
-          <div className="image-container-custom">
-            <img src={auxiliarnecropsia} alt="Informática Profissional" className="course-image-custom" />
-          </div>
+        {/* Imagem de fundo dinâmica */}
+        <div className="course-overview-custom" style={{ backgroundImage: `url(${auxiliarnecropsia})` }}>
           <div className="card-custom">
             <div className="tools-custom">
               <div className="circle-custom">
